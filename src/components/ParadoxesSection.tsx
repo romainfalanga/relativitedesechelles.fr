@@ -129,7 +129,7 @@ export default function ParadoxesSection() {
               <p className="text-yellow-300 font-semibold">
                 La Relativité des Échelles corrige l'illusion : l'univers ne se dilate pas vers l'extérieur, 
                 il se déploie vers son infiniment petit ; et le rouge des photons n'est pas la trace d'un éloignement, 
-                mais le reflet du glissement continu de la métrique d'échelle à travers le temps cosmique.
+                mais le reflet du glissement continu de la métrique d'échelle à travers le temps.
               </p>
             </div>
             </div>

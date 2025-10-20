@@ -14,6 +14,7 @@ export default function Navbar({ activeSection, scrollToSection }: NavbarProps) 
     { id: 'relativite', label: 'La relativité des échelles' },
     { id: 'paradoxes', label: 'La clé des paradoxes' },
     { id: 'etoiles', label: 'Étoiles Quantiques' },
+    { id: 'visualisation', label: 'Visualisations' },
     { id: 'formules', label: 'Formules' }
   ];
 

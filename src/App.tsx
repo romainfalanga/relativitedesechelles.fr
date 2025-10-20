@@ -5,6 +5,7 @@ import EnigmesSection from './components/EnigmesSection';
 import RelativiteDesEchellesSection from './components/RelativiteDesEchellesSection';
 import ParadoxesSection from './components/ParadoxesSection';
 import EtoilesQuantiquesSection from './components/EtoilesQuantiquesSection';
+import VisualizationSection from './components/VisualizationSection';
 import FormulasSection from './components/FormulasSection';
 import Footer from './components/Footer';
 
@@ -13,7 +14,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'enigmes', 'relativite', 'paradoxes', 'etoiles', 'formules'];
+      const sections = ['hero', 'enigmes', 'relativite', 'paradoxes', 'etoiles', 'visualisation', 'formules'];
       const scrollY = window.scrollY;
       
       for (const section of sections) {
@@ -46,6 +47,7 @@ function App() {
       <RelativiteDesEchellesSection />
       <ParadoxesSection />
       <EtoilesQuantiquesSection />
+      <VisualizationSection />
       <FormulasSection />
       <Footer />
     </div>
