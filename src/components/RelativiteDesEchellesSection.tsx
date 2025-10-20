@@ -46,8 +46,7 @@ export default function RelativiteDesEchellesSection() {
               une expansion externe de l'espace, mais une dilatation interne de l'échelle.
             </p>
             <p className="text-green-300 font-medium relative z-10">
-              L'univers n'est pas en expansion vers l'extérieur : il s'étire de l'intérieur, 
-              redessinant sans cesse sa propre règle.
+              L'univers n'est pas en expansion vers l'extérieur : il s'étire de l'intérieur.
             </p>
           </div>
 

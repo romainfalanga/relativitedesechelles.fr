@@ -30,7 +30,7 @@ export default function ParadoxesSection() {
                 plus la densité est grande, plus la règle locale se déforme et s'étire.
               </p>
               <p>
-                Lorsqu'une étoile massive s'effondre, cette tension peut s'étirer grandement. 
+                Lorsqu'une étoile massive s'effondre, cette tension s'étire grandement ! 
                 Ce que nous appelons "singularité" n'est donc pas un point sans dimension, 
                 mais une région où la métrique d'échelle sort de notre domaine de mesure car 
                 notre "règle propre" n'est plus calibrée pour voir ce qu'il s'y passe.
@@ -39,10 +39,6 @@ export default function ParadoxesSection() {
                 Le centre du trou noir n'est pas un objet qui s'effondre dans l'infini, 
                 mais un décalage de plan d'échelle : la matière poursuit son existence 
                 dans un régime d'échelle propre, invisible pour nous mais cohérent dans son référentiel interne.
-              </p>
-              <p className="text-yellow-300 font-semibold">
-                Ainsi, le trou noir n'est pas une fin, mais une transition continue d'échelle, 
-                un seuil où l'infiniment petit et l'infiniment grand se rejoignent au sein du même tissu.
               </p>
             </div>
           </div>
@@ -98,15 +94,7 @@ export default function ParadoxesSection() {
                   cette constante de "plus grosse erreur" de sa vie.
               </p>
               <p className="text-purple-200 mb-4">
-                  Pourtant, la Relativité des Échelles révèle qu'Einstein avait toujours raison dans sa 
-                  vision harmonieuse. Son intuition d'un univers en équilibre était juste : ce n'est pas 
-                  l'espace qui s'étend, mais notre règle d'échelle qui glisse continuellement.
-              </p>
-              <p className="text-yellow-300 font-medium">
-                  C'est en se calibrant sur cette vision harmonieuse d'Einstein, en prenant au sérieux 
-                  son intuition d'équilibre cosmique, que la Relativité des Échelles est née. Einstein 
-                  n'avait pas tort : il avait simplement entrevu une dimension que nous commençons 
-                  seulement à comprendre, celle de l'échelle elle-même.
+                  Pourtant, la Relativité des Échelles révèle qu'Einstein a toujours eu raison ! Son intuition d'un univers en équilibre était juste. Avec la relativité des échelles, ce n'est pas l'espace qui s'étend, mais notre règle d'échelle qui s'étirent continuellement.
               </p>
               <p>
                 Ce que nous prenons pour une expansion de l'espace n'est pas un éloignement matériel, 

@@ -25,10 +25,10 @@ export default function EnigmesSection() {
               <h3 className="text-2xl font-orbitron font-bold text-white relative z-10">Singularités</h3>
             </div>
             <p className="text-gray-200 leading-relaxed mb-4 relative z-10">
-              Selon la Relativité Générale, l'effondrement d'une étoile massive crée un point de densité infinie.
+              Selon la Relativité Générale, l'effondrement d'une étoile massive crée un trou noir avec en son centre un point de densité infinie.
             </p>
             <p className="text-gray-300 text-sm relative z-10">
-              Mais un "infini" physique n'a aucun sens concret - c'est une rupture du modèle.
+              Mais un "infini" physique n'a aucun sens concret : c'est une rupture du modèle.
             </p>
           </div>
 
@@ -44,7 +44,7 @@ export default function EnigmesSection() {
               Ces résidus d'étoiles se refroidissent beaucoup plus rapidement que ne le prédisent nos modèles.
             </p>
             <p className="text-gray-300 text-sm relative z-10">
-              Où disparaît cette énergie ? Serait-elle évacuée sous une forme invisible ?
+              Qu'est-ce qui pourrait expliquer cela ?
             </p>
           </div>
 
