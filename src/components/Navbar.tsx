@@ -10,11 +10,11 @@ export default function Navbar({ activeSection, scrollToSection }: NavbarProps) 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { id: 'hero', label: 'Accueil' },
-    { id: 'enigmes', label: 'Énigmes' },
-    { id: 'relativite', label: 'Relativité' },
-    { id: 'paradoxes', label: 'Solutions' },
-    { id: 'etoiles', label: 'Étoiles Quantiques' }
+    { id: 'enigmes', label: 'Les énigmes' },
+    { id: 'relativite', label: 'La relativité des échelles' },
+    { id: 'paradoxes', label: 'La clé des paradoxes' },
+    { id: 'etoiles', label: 'Étoiles Quantiques' },
+    { id: 'formules', label: 'Formules' }
   ];
 
   const handleNavClick = (sectionId: string) => {
