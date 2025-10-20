@@ -1,0 +1,7 @@
+# Netlify redirects file
+/*    /index.html   200
+
+# Force HTTPS
+http://relativitedesechelles.fr/*    https://relativitedesechelles.fr/:splat    301!
+http://www.relativitedesechelles.fr/*    https://relativitedesechelles.fr/:splat    301!
+https://www.relativitedesechelles.fr/*    https://relativitedesechelles.fr/:splat    301!
