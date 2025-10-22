@@ -25,15 +25,15 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://relativitedesechelles.fr/#etoiles</loc>
+    <loc>https://relativitedesechelles.fr/#formules</loc>
     <lastmod>2025-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://relativitedesechelles.fr/#formules</loc>
+    <loc>https://relativitedesechelles.fr/#citations</loc>
     <lastmod>2025-01-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>
