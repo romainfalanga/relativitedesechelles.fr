@@ -20,7 +20,7 @@ export default function FormulasSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-slate-800/40 to-slate-700/30 rounded-3xl"></div>
             <h3 className="text-3xl font-orbitron font-bold text-indigo-300 mb-6 relative z-10">I. Le Tissu d'Espace-Temps (4D)</h3>
             <div className="space-y-4 text-gray-200 leading-relaxed relative z-10">
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">🌍 Définition classique</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Définition classique</h4>
               <p>
                 La Relativité Générale décrit la gravitation comme une courbure du tissu d'espace-temps.
                 Ce tissu est une métrique à quatre dimensions :
@@ -32,7 +32,7 @@ export default function FormulasSection() {
               </div>
               <p>
                 où <i>x</i><sup>μ</sup> = (<i>ct</i>, <i>x</i>, <i>y</i>, <i>z</i>) sont les coordonnées espace-temps et <i>g</i><sub>μν</sub> la métrique gravitationnelle.
-                La masse et l'énergie déforment ce tissu, modifiant la manière dont la lumière et le temps s\'écoulent.
+                La masse et l'énergie déforment ce tissu, modifiant la manière dont la lumière et le temps s'écoulent.
               </p>
               <p>
                 Mais cette vision à quatre dimensions montre ses limites à l'approche de l'infiniment petit ou dans les régions de densité extrême, où les équations classiques cessent d'être valides.
@@ -45,7 +45,7 @@ export default function FormulasSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-800/40 to-blue-700/30 rounded-3xl"></div>
             <h3 className="text-3xl font-orbitron font-bold text-purple-300 mb-6 relative z-10">II. Le Tissu d'Espace-Temps-d'Échelle (5D)</h3>
             <div className="space-y-4 text-gray-200 leading-relaxed relative z-10">
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">🌀 Extension à la cinquième dimension : l'échelle</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Extension à la cinquième dimension : l'échelle</h4>
               <p>
                 La Relativité des Échelles ajoute une cinquième dimension, l'échelle <i>ε</i>, qui mesure la profondeur d'étirement interne du réel.
                 Le tissu devient un espace-temps-d'échelle à cinq dimensions :
@@ -56,16 +56,16 @@ export default function FormulasSection() {
                 </div>
               </div>
               <p>
-                <i>g</i><sub>μν</sub>(<i>x</i>, <i>ε</i>) décrit la géométrie de l'espace-temps dépendante de l\'échelle,
+                <i>g</i><sub>μν</sub>(<i>x</i>, <i>ε</i>) décrit la géométrie de l'espace-temps dépendante de l'échelle,
               </p>
               <p>
                 <i>ε</i> est la coordonnée d'échelle,
               </p>
               <p>
-                Σ(<i>x</i>, <i>ε</i>) est le facteur d'échelle, qui exprime la tension ou l\'élasticité du tissu dans la dimension d\'échelle.
+                Σ(<i>x</i>, <i>ε</i>) est le facteur d'échelle, qui exprime la tension ou l'élasticité du tissu dans la dimension d'échelle.
               </p>
               <p>
-                Le passage du 4D au 5D ne crée pas un espace "au-dessus\" du nôtre, mais une profondeur interne au tissu : une dimension cachée où se régule la continuité entre les échelles.
+                Le passage du 4D au 5D ne crée pas un espace "au-dessus" du nôtre, mais une profondeur interne au tissu : une dimension cachée où se régule la continuité entre les échelles.
               </p>
             </div>
           </div>
@@ -75,10 +75,10 @@ export default function FormulasSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-purple-800/40 to-purple-700/30 rounded-3xl"></div>
             <h3 className="text-3xl font-orbitron font-bold text-green-300 mb-6 relative z-10">III. La Tension de la Règle d'Échelle</h3>
             <div className="space-y-4 text-gray-200 leading-relaxed relative z-10">
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">⚖️ Définition</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Définition</h4>
               <p>
                 Le facteur d'échelle Σ varie avec la coordonnée d'échelle <i>ε</i>.
-                Sa variation définit la tension d'échelle, c\'est-à-dire l\'intensité de l\'étirement du tissu :
+                Sa variation définit la tension d'échelle, c'est-à-dire l'intensité de l'étirement du tissu :
               </p>
               <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
                 <div className="font-serif text-white flex items-center justify-center">
@@ -102,7 +102,7 @@ export default function FormulasSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-green-800/40 to-green-700/30 rounded-3xl"></div>
             <h3 className="text-3xl font-orbitron font-bold text-orange-300 mb-6 relative z-10">IV. Règle Universelle et Règles Locales</h3>
             <div className="space-y-4 text-gray-200 leading-relaxed relative z-10">
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">🌐 Relation entre le global et le local</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Relation entre le global et le local</h4>
               <p>
                 Le facteur d'échelle peut se décomposer en une partie universelle et une partie locale :
               </p>
@@ -129,7 +129,7 @@ export default function FormulasSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-orange-800/40 to-orange-700/30 rounded-3xl"></div>
             <h3 className="text-3xl font-orbitron font-bold text-red-300 mb-6 relative z-10">V. Gravitation et Déformation d'Échelle</h3>
             <div className="space-y-4 text-gray-200 leading-relaxed relative z-10">
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">🪶 Couplage entre la courbure et la métrique d'échelle</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Couplage entre la courbure et la métrique d'échelle</h4>
               <p>
                 La déformation du tissu d'échelle dépend directement de la courbure de l'espace-temps classique :
               </p>
@@ -147,7 +147,7 @@ export default function FormulasSection() {
                 La masse et l'énergie créent de la courbure ; cette courbure engendre une tension dans la règle d'échelle.
                 Autrement dit, la gravité ne se manifeste pas seulement par la géométrie, mais aussi par une élasticité interne du tissu.
               </p>
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4 mt-8">⚙️ Équilibre local d'échelle</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4 mt-8">Équilibre local d'échelle</h4>
               <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
                 <div className="font-serif text-white flex items-center justify-center">
                   ∇<sub>μ</sub>
@@ -174,7 +174,7 @@ export default function FormulasSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-red-800/40 to-red-700/30 rounded-3xl"></div>
             <h3 className="text-3xl font-orbitron font-bold text-blue-300 mb-6 relative z-10">VI. Fin du Paradoxe des Singularités</h3>
             <div className="space-y-4 text-gray-200 leading-relaxed relative z-10">
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">🌌 Étirement continu du tissu : plus d'infini, plus de rupture</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Étirement continu du tissu : plus d'infini, plus de rupture</h4>
               <p>
                 Dans la Relativité des Échelles, il n'existe pas de singularité.
                 Ce que la Relativité Générale interprétait comme un "point infini" est en réalité un étirement continu de la règle d'échelle, produit par la masse, la pression et la vitesse interne de la matière.
@@ -233,7 +233,7 @@ export default function FormulasSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-800/40 to-blue-700/30 rounded-3xl"></div>
             <h3 className="text-3xl font-orbitron font-bold text-cyan-300 mb-6 relative z-10">VII. Refroidissement des Étoiles à Neutrons</h3>
             <div className="space-y-4 text-gray-200 leading-relaxed relative z-10">
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">🌡️ Gradient interne d'échelle</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Gradient interne d'échelle</h4>
               <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
                 <div className="font-serif text-white flex items-center justify-center">
                   <div className="inline-flex flex-col items-center mx-2">
@@ -248,7 +248,7 @@ export default function FormulasSection() {
                 La variation d'échelle au sein d'une étoile dépend directement de sa densité.
                 Vers le centre, où la matière est plus compacte, la tension d'échelle s'accroît.
               </p>
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4 mt-8">🔥 Flux thermique modifié par la tension d'échelle</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4 mt-8">Flux thermique modifié par la tension d'échelle</h4>
               <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
                 <div className="font-serif text-white flex items-center justify-center">
                   Φ<sub>T</sub>(<i>r</i>) = −<i>k</i>
@@ -278,7 +278,7 @@ export default function FormulasSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-800/40 to-cyan-700/30 rounded-3xl"></div>
             <h3 className="text-3xl font-orbitron font-bold text-purple-300 mb-6 relative z-10">VIII. Expansion Cosmique et Glissement d'Échelle</h3>
             <div className="space-y-4 text-gray-200 leading-relaxed relative z-10">
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">🌠 Loi d'évolution de la règle universelle</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Loi d'évolution de la règle universelle</h4>
               <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
                 <div className="font-serif text-white flex items-center justify-center">
                   <div className="inline-flex flex-col items-center mx-2">
@@ -293,7 +293,7 @@ export default function FormulasSection() {
                 L'univers ne s'étend pas vers l'extérieur : sa règle universelle s'étire vers l'infiniment petit.
                 Le paramètre <i>H</i><sub>ε</sub> joue un rôle analogue à celui de Hubble, mais il mesure la vitesse du glissement d'échelle interne.
               </p>
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4 mt-8">🌈 Décalage vers le rouge d'origine métrique</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4 mt-8">Décalage vers le rouge d'origine métrique</h4>
               <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
                 <div className="font-serif text-white flex items-center justify-center">
                   1 + <i>z</i> = 
@@ -316,12 +316,12 @@ export default function FormulasSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-purple-800/40 to-purple-700/30 rounded-3xl"></div>
             <h3 className="text-3xl font-orbitron font-bold text-indigo-300 mb-6 relative z-10">IX. Les Étoiles Quantiques : Régimes d'Échelle Extrêmes</h3>
             <div className="space-y-4 text-gray-200 leading-relaxed relative z-10">
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">⚛️ Description générale</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Description générale</h4>
               <p>
                 Lorsqu'une étoile s'effondre, sa densité, sa pression et sa vitesse interne deviennent telles que la règle du tissu d'échelle-temps s'étire intensément.
                 Toute la masse contenue à l'intérieur de l'horizon des événements continue d'exister dans un régime où la métrique est rééchelonnée par Σ.
               </p>
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4 mt-8">⚙️ Évolution d'échelle pendant l'effondrement</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4 mt-8">Évolution d'échelle pendant l'effondrement</h4>
               <p>L'étirement suit la même loi que pour les régions denses ordinaires :</p>
               <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
                 <div className="font-serif text-white flex items-center justify-center flex-wrap">
@@ -338,7 +338,7 @@ export default function FormulasSection() {
                 Ici encore, plus la densité et la pression augmentent, plus la règle d'échelle s'allonge, rééchelonnant le tissu interne sans rupture.
                 Le cœur d'une étoile quantique n'est donc pas un "point" : c'est une zone d'espace-temps où la métrique est profondément dilatée dans la dimension d'échelle.
               </p>
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4 mt-8">💫 État d'équilibre d'échelle</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4 mt-8">État d'équilibre d'échelle</h4>
               <p>
                 L'étoile quantique correspond à un régime stable d'étirement où la tension d'échelle équilibre la compression gravitationnelle.
                 Elle peut être décrite par une équation d'état d'échelle :
@@ -355,7 +355,7 @@ export default function FormulasSection() {
               </div>
               <p>
                 Cette loi relie la densité d'énergie d'échelle <i>ρ</i><sub>ε</sub> à une longueur caractéristique <i>L</i><sub>ε</sub> associée à la structure interne du tissu.
-                C'est dans ce régime que l\'univers relie naturellement la relativité générale à la physique quantique : le très grand et le très petit se rejoignent dans la même tension de règle.
+                C'est dans ce régime que l'univers relie naturellement la relativité générale à la physique quantique : le très grand et le très petit se rejoignent dans la même tension de règle.
               </p>
             </div>
           </div>
@@ -365,7 +365,7 @@ export default function FormulasSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-800/40 to-indigo-700/30 rounded-3xl"></div>
             <h3 className="text-3xl font-orbitron font-bold text-green-300 mb-6 relative z-10">X. Le Champ d'Échelle-Temps Unifié</h3>
             <div className="space-y-4 text-gray-200 leading-relaxed relative z-10">
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">🔗 Équation du champ généralisé</h4>
+              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Équation du champ généralisé</h4>
               <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
                 <div className="font-serif text-white flex items-center justify-center flex-wrap">
                   <i>G</i><sub>μν</sub>(<i>x</i>, <i>ε</i>) + Λ<sub>ε</sub> <i>g</i><sub>μν</sub>(<i>x</i>, <i>ε</i>) = 
@@ -473,7 +473,7 @@ export default function FormulasSection() {
           {/* Conclusion */}
           <div className="futuristic-card p-8 md:p-12 rounded-3xl border-purple-500/30 hover:border-purple-400/50">
             <div className="absolute inset-0 bg-gradient-to-r from-yellow-800/40 to-yellow-700/30 rounded-3xl"></div>
-            <h3 className="text-3xl font-orbitron font-bold text-purple-300 mb-6 relative z-10">🧭 Conclusion</h3>
+            <h3 className="text-3xl font-orbitron font-bold text-purple-300 mb-6 relative z-10">Conclusion</h3>
             <div className="space-y-4 text-gray-200 leading-relaxed relative z-10">
               <p>
                 La Relativité des Échelles révèle un univers sans rupture, sans infini, sans frontière.

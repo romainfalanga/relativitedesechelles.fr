@@ -35,7 +35,7 @@ export default function ParadoxesSection() {
                 mais une région où la métrique d'échelle sort de notre domaine de mesure car 
                 notre "règle propre" n'est plus calibrée pour voir ce qu'il s'y passe.
               </p>
-              <p className="text-red-300 font-medium">
+              <p className="text-yellow-300 font-semibold">
                 Le centre du trou noir n'est pas un objet qui s'effondre dans l'infini, 
                 mais un décalage de plan d'échelle : la matière poursuit son existence 
                 dans un régime d'échelle propre, invisible pour nous mais cohérent dans son référentiel interne.

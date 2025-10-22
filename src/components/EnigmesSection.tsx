@@ -1,5 +1,4 @@
 import React from 'react';
-import { Zap, Orbit, Telescope } from 'lucide-react';
 
 export default function EnigmesSection() {
   return (
@@ -18,12 +17,7 @@ export default function EnigmesSection() {
         <div className="grid md:grid-cols-3 gap-8 relative z-10">
           <div className="futuristic-card p-8 rounded-2xl border-red-500/30 hover:border-red-400/50 group">
             <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 to-red-800/10 rounded-2xl"></div>
-            <div className="flex items-center mb-6">
-              <div className="p-3 bg-red-600/30 rounded-full mr-4 group-hover:bg-red-500/40 transition-colors duration-300 relative z-10">
-                <Zap className="text-red-400 group-hover:text-red-300" size={32} />
-              </div>
-              <h3 className="text-2xl font-orbitron font-bold text-white relative z-10">Singularités</h3>
-            </div>
+            <h3 className="text-2xl font-orbitron font-bold text-white mb-6 relative z-10">Singularités</h3>
             <p className="text-gray-200 leading-relaxed mb-4 relative z-10">
               Selon la Relativité Générale, l'effondrement d'une étoile massive crée un trou noir avec en son centre un point de densité infinie.
             </p>
@@ -34,12 +28,7 @@ export default function EnigmesSection() {
 
           <div className="futuristic-card p-8 rounded-2xl border-blue-500/30 hover:border-blue-400/50 group">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-blue-800/10 rounded-2xl"></div>
-            <div className="flex items-center mb-6">
-              <div className="p-3 bg-blue-600/30 rounded-full mr-4 group-hover:bg-blue-500/40 transition-colors duration-300 relative z-10">
-                <Orbit className="text-blue-400 group-hover:text-blue-300" size={32} />
-              </div>
-              <h3 className="text-2xl font-orbitron font-bold text-white relative z-10">Étoiles à Neutrons</h3>
-            </div>
+            <h3 className="text-2xl font-orbitron font-bold text-white mb-6 relative z-10">Étoiles à Neutrons</h3>
             <p className="text-gray-200 leading-relaxed mb-4 relative z-10">
               Ces résidus d'étoiles se refroidissent beaucoup plus rapidement que ne le prédisent nos modèles.
             </p>
@@ -50,12 +39,7 @@ export default function EnigmesSection() {
 
           <div className="futuristic-card p-8 rounded-2xl border-purple-500/30 hover:border-purple-400/50 group">
             <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-purple-800/10 rounded-2xl"></div>
-            <div className="flex items-center mb-6">
-              <div className="p-3 bg-purple-600/30 rounded-full mr-4 group-hover:bg-purple-500/40 transition-colors duration-300 relative z-10">
-                <Telescope className="text-purple-400 group-hover:text-purple-300" size={32} />
-              </div>
-              <h3 className="text-2xl font-orbitron font-bold text-white relative z-10">Expansion Cosmique</h3>
-            </div>
+            <h3 className="text-2xl font-orbitron font-bold text-white mb-6 relative z-10">Expansion Cosmique</h3>
             <p className="text-gray-200 leading-relaxed mb-4 relative z-10">
               L'univers s'étend à une vitesse croissante, poussé par une mystérieuse "énergie sombre".
             </p>

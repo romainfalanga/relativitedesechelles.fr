@@ -5,7 +5,6 @@ import EnigmesSection from './components/EnigmesSection';
 import RelativiteDesEchellesSection from './components/RelativiteDesEchellesSection';
 import ParadoxesSection from './components/ParadoxesSection';
 import EtoilesQuantiquesSection from './components/EtoilesQuantiquesSection';
-import VisualizationSection from './components/VisualizationSection';
 import FormulasSection from './components/FormulasSection';
 import CitationsSection from './components/CitationsSection';
 import Footer from './components/Footer';
@@ -14,7 +13,7 @@ function App() {
   const [activeSection, setActiveSection] = useState('hero');
 
   useEffect(() => {
-    const sections = ['hero', 'enigmes', 'relativite', 'paradoxes', 'etoiles', 'visualisation', 'formules', 'citations'];
+    const sections = ['hero', 'enigmes', 'relativite', 'paradoxes', 'etoiles', 'formules', 'citations'];
     const handleScroll = () => {
       const sections = ['hero', 'enigmes', 'relativite', 'paradoxes', 'etoiles', 'formules', 'citations'];
       const scrollY = window.scrollY;
@@ -49,7 +48,6 @@ function App() {
       <RelativiteDesEchellesSection />
       <ParadoxesSection />
       <EtoilesQuantiquesSection />
-      <VisualizationSection />
       <FormulasSection />
       <CitationsSection />
       <Footer />
