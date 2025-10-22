@@ -121,19 +121,6 @@ export default function CitationsSection() {
             </div>
             </div>
           </div>
-
-          {/* Note de remerciement */}
-          <div className="futuristic-card p-8 md:p-10 rounded-3xl border-cyan-500/30 hover:border-cyan-400/50">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-800/20 to-teal-800/20 rounded-3xl"></div>
-            <div className="relative z-10">
-              <h3 className="text-2xl font-orbitron font-bold text-white mb-3">Remerciements</h3>
-              <p className="text-gray-200 leading-relaxed">
-                Cette théorie s'appuie sur les fondements solides établis par ces géants de la physique. 
-                Leurs travaux constituent les piliers sur lesquels la Relativité des Échelles peut s'élever 
-                pour proposer une nouvelle vision unifiée de l'univers.
-              </p>
-            </div>
-          </div>
         </div>
     </section>
   )

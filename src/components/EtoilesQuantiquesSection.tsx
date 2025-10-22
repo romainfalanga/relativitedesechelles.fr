@@ -41,27 +41,12 @@ export default function EtoilesQuantiquesSection() {
                 L'étoile quantique n'est ni une singularité, ni une étoile classique : 
                 c'est un état d'équilibre d'échelle où la gravitation, par son influence sur la courbure 
                 de l'espace-temps, provoque un étirement extrême de la règle d'échelle, se manifestant 
-                comme une dilatation interne.
+                comme une dilatation interne. Cependant, l'étoile quantique n'est pas simplement un objet quantique au sens habituel. Sa règle d'échelle est si profondément étirée qu'elle nous projette dans un domaine encore plus "petit" que ce que nous considérons comme quantique à notre échelle de référence. 
               </p>
             </div>
           </div>
 
-          {/* Troisième bloc */}
-          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-cyan-500/30 hover:border-cyan-400/50">
-            <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/30 via-blue-900/30 to-indigo-900/20 rounded-3xl"></div>
-            <h3 className="text-3xl font-orbitron font-bold text-white mb-6 relative z-10">Vers une Théorie du Tout</h3>
-            <div className="space-y-4 text-gray-200 leading-relaxed relative z-10">
-              <p>
-                Le terme "étoile quantique" lui-même incarne cette quête d'une théorie du tout. 
-                "Étoile" évoque la relativité générale et les phénomènes cosmiques de grande échelle, 
-                tandis que "quantique" renvoie à l'infiniment petit. Cependant, l'étoile quantique 
-                n'est pas simplement un objet quantique au sens habituel. Sa règle d'échelle est si 
-                profondément étirée qu'elle nous projette dans un domaine encore plus "petit" que ce 
-                que nous considérons comme quantique à notre échelle de référence. Ainsi, la Relativité 
-                des Échelles ouvre une nouvelle voie pour comprendre l'univers dans toute sa complexité.
-              </p>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
