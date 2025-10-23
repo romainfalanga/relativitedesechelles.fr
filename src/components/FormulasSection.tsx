@@ -7,737 +7,781 @@ export default function FormulasSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 relative z-10">
           <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-white mb-6">
-            Les Formules Fondamentales de la Relativité des Échelles
+            Formules Fondamentales
           </h2>
           <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
-            Un cadre mathématique unifiant l'infiniment petit et l'infiniment grand
+            Les équations mathématiques qui décrivent le tissu d'espace-temps-d'échelle et ses propriétés dynamiques
           </p>
         </div>
 
-        <div className="space-y-12 relative z-10">
-          {/* Section I: Le Tissu d'Espace-Temps (4D) */}
-          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-indigo-500/30 hover:border-indigo-400/50">
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-800/40 to-slate-700/30 rounded-3xl"></div>
-            <h3 className="text-3xl font-orbitron font-bold text-indigo-300 mb-6 relative z-10">I. Le Tissu d'Espace-Temps (4D)</h3>
-            <div className="space-y-6 text-gray-200 leading-relaxed relative z-10">
-              <p>
-                Cette formule décrit la "règle de mesure" de l'univers quand on ne considère que l'espace et le temps (sans la 5ᵉ dimension d'échelle). 
-                Elle constitue le fondement de la Relativité Générale d'Einstein.
-              </p>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white">
-                  <i>ds</i><sup>2</sup> = <i>g</i><sub>μν</sub>(<i>x</i>) <i>dx</i><sup>μ</sup> <i>dx</i><sup>ν</sup>
-                </div>
-              </div>
+        <div className="space-y-16 relative z-10">
+          {/* I. Le Tissu d'Espace-Temps (4D) */}
+          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-purple-500/30 hover:border-purple-400/50">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-800/20 to-indigo-800/20 rounded-3xl"></div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-orbitron font-bold text-white mb-6">I. Le Tissu d'Espace-Temps (4D)</h3>
               
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Clés</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong><i>x</i><sup>μ</sup> = (<i>ct</i>, <i>x</i>, <i>y</i>, <i>z</i>)</strong> : coordonnées d'un événement de l'univers</li>
-                <li><strong><i>t</i></strong> : le temps, multiplié par <i>c</i> (vitesse de la lumière) pour l'exprimer dans les mêmes unités que les distances</li>
-                <li><strong><i>x</i>, <i>y</i>, <i>z</i></strong> : coordonnées d'espace (position)</li>
-                <li><strong><i>dx</i><sup>μ</sup></strong> : très petit déplacement dans la direction μ (petit pas dans le temps ou l'espace)</li>
-                <li><strong><i>g</i><sub>μν</sub>(<i>x</i>)</strong> : la métrique, outil qui dit comment mesurer longueurs et durées en tenant compte de la courbure gravitationnelle</li>
-                <li><strong><i>ds</i><sup>2</sup></strong> : l'intervalle (temps propre ou distance propre) mesuré par une horloge et une règle idéales</li>
-              </ul>
+              <div className="bg-slate-900/50 p-6 rounded-lg mb-6 overflow-x-auto">
+                <div className="text-center text-2xl font-serif text-white">
+                  <i>ds</i><sup>2</sup> = <i>g</i><sub>μν</sub>(<i>x</i>)<i>dx</i><sup>μ</sup><i>dx</i><sup>ν</sup>
+                </div>
+              </div>
 
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Fonctionnement de la Formule</h4>
-              <p>
-                Quand il n'y a pas de masse/énergie, l'espace-temps est "plat" comme une feuille bien plane et mesurer est simple. 
-                Mais dès qu'il y a de la matière, la feuille se déforme : les règles et horloges ne se comportent plus comme dans un espace parfaitement plat.
-              </p>
-              <p>
-                Si <i>g</i><sub>μν</sub> change d'un endroit à l'autre (parce qu'on s'approche d'une étoile, d'une planète, etc.), 
-                alors les durées et les distances mesurées changent aussi : c'est la gravitation vue non pas comme une force qui "tire", 
-                mais comme une géométrie qui s'incurve.
-              </p>
-              <p>
-                Les trajectoires naturelles des objets (y compris la lumière) sont alors les "lignes les plus droites possible" 
-                dans cette géométrie courbe : on les appelle géodésiques.
-              </p>
+              <div className="space-y-4 text-gray-200">
+                <h4 className="text-xl font-semibold text-purple-300 mb-3">Symboles clés</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><strong><i>x</i><sup>μ</sup> = (<i>ct</i>, <i>x</i>, <i>y</i>, <i>z</i>)</strong> : coordonnées espace-temps d'un événement (μ = 0, 1, 2, 3).</li>
+                  <li><strong><i>ct</i></strong> : temps exprimé en unités de longueur via <i>c</i> (vitesse de la lumière).</li>
+                  <li><strong><i>x</i>, <i>y</i>, <i>z</i></strong> : coordonnées spatiales.</li>
+                  <li><strong><i>dx</i><sup>μ</sup></strong> : déplacement infinitésimal dans la direction μ (petit pas de temps/d'espace).</li>
+                  <li><strong><i>g</i><sub>μν</sub>(<i>x</i>)</strong> : métrique (tenseur) qui encode la courbure gravitationnelle locale et dicte comment mesurer durées et distances.</li>
+                  <li><strong><i>ds</i><sup>2</sup></strong> : intervalle (temps propre/distance propre) réellement mesuré par une horloge/règle idéales.</li>
+                </ul>
 
-              <div className="bg-red-900/40 p-6 rounded-xl border border-red-500/30 backdrop-blur-sm">
-                <p className="text-red-200 font-semibold mb-3">Limite :</p>
-                <p className="text-red-200">
-                  Cette description 4D est superbe pour l'astronomie et la physique classique des grandes échelles, 
-                  mais elle s'essouffle dès que l'on touche l'infiniment petit ou des densités extrêmes (cœurs stellaires, trous noirs) : 
-                  c'est là que la 5ᵉ dimension d'échelle intervient.
+                <h4 className="text-xl font-semibold text-purple-300 mb-3 mt-6">Fonctionnement</h4>
+                <p className="leading-relaxed">
+                  La Relativité Générale décrit la gravité comme géométrie : la matière-énergie modifie <i>g</i><sub>μν</sub>, et donc la manière dont on mesure <i>ds</i><sup>2</sup>. En région "plate" (pas de masse), <i>g</i><sub>μν</sub> est quasi minkowskien et les trajectoires "droites" sont triviales ; près d'une masse, <i>g</i><sub>μν</sub> varie, les horloges se dilatent, les règles se contractent et les trajectoires naturelles (géodésiques) se courbent. Cette base 4D est excellente sur de grandes échelles, mais s'essouffle dans l'infiniment petit ou aux densités extrêmes (singularités). C'est précisément là que la dimension d'échelle intervient dans la suite.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Section II: Le Tissu d'Espace-Temps-d'Échelle (5D) */}
-          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-purple-500/30 hover:border-purple-400/50">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-800/40 to-blue-700/30 rounded-3xl"></div>
-            <h3 className="text-3xl font-orbitron font-bold text-purple-300 mb-6 relative z-10">II. Le Tissu d'Espace-Temps-d'Échelle (5D)</h3>
-            <div className="space-y-6 text-gray-200 leading-relaxed relative z-10">
-              <p>
-                Ici, on ajoute une nouvelle coordonnée : ε, la dimension d'échelle. L'idée est simple mais puissante : 
-                en plus de dire où et quand on est (4D), on dit à quel "niveau d'échelle" on regarde la réalité (5ᵉ dimension).
-              </p>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white">
-                  <i>ds</i><sup>2</sup> = <i>g</i><sub>μν</sub>(<i>x</i>, <i>ε</i>) <i>dx</i><sup>μ</sup> <i>dx</i><sup>ν</sup> + Σ<sup>2</sup>(<i>x</i>, <i>ε</i>) <i>dε</i><sup>2</sup>
-                </div>
-              </div>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Clés</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong><i>ε</i></strong> : la coordonnée d'échelle (5ᵉ dimension), niveau d'échelle où l'on regarde la réalité</li>
-                <li><strong><i>g</i><sub>μν</sub>(<i>x</i>, <i>ε</i>)</strong> : métrique dépendante de l'échelle, la façon de mesurer temps et distances change avec ε</li>
-                <li><strong>Σ(<i>x</i>, <i>ε</i>)</strong> : facteur d'échelle, dit à quel point la "règle cosmique" est étirée dans la dimension d'échelle</li>
-                <li><strong><i>dε</i></strong> : petit déplacement dans la dimension d'échelle</li>
-                <li><strong>Σ<sup>2</sup> <i>dε</i><sup>2</sup></strong> : un petit pas dε compte davantage si Σ est grande (règle très tendue)</li>
-              </ul>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Fonctionnement de la Formule</h4>
-              <p>
-                Cette dimension ne se balade pas "au-dessus" de l'espace-temps : c'est plutôt une profondeur interne, 
-                une façon différente de traverser la réalité. La géométrie n'est pas figée à un seul niveau.
-              </p>
-              <p>
-                Les masses, les pressions et les vitesses modifient ce curseur d'échelle. Le facteur Σ exprime 
-                l'intensité de l'étirement du tissu quand on se déplace dans la dimension d'échelle.
-              </p>
-
-              <div className="bg-yellow-900/40 p-6 rounded-xl border border-yellow-500/30 backdrop-blur-sm">
-                <p className="text-yellow-200 font-semibold mb-3">Intuition :</p>
-                <p className="text-yellow-200">
-                  Si le 4D est une carte, la 5ᵉ dimension ε est comme un curseur de zoom qui n'est pas arbitraire : il est physique. 
-                  Beaucoup de paradoxes (singularités, refroidissement des étoiles à neutrons, "expansion" cosmique) deviennent cohérents 
-                  quand on reconnaît que la règle elle-même change en profondeur d'échelle.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Section III: La Tension de la Règle d'Échelle */}
-          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-green-500/30 hover:border-green-400/50">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-800/40 to-purple-700/30 rounded-3xl"></div>
-            <h3 className="text-3xl font-orbitron font-bold text-green-300 mb-6 relative z-10">III. La Tension de la Règle d'Échelle</h3>
-            <div className="space-y-6 text-gray-200 leading-relaxed relative z-10">
-              <p>
-                Cette formule mesure l'intensité de l'étirement de la règle d'échelle. 
-                Elle quantifie à quelle vitesse la règle devient plus (ou moins) tendue quand on se déplace dans la 5ᵉ dimension.
-              </p>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white flex items-center justify-center">
-                  <i>T</i><sub>ε</sub> = 
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base"><i>dΣ</i></div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base"><i>dε</i></div>
-                  </div>
-                </div>
-              </div>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Clés</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong><i>T</i><sub>ε</sub></strong> : tension d'échelle, intensité de l'étirement de la règle</li>
-                <li><strong>Σ</strong> : facteur d'échelle qui mesure l'étirement de la règle</li>
-                <li><strong><i>dΣ/dε</i></strong> : dérivée de Σ par rapport à ε (le "zoom physique")</li>
-              </ul>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Fonctionnement de la Formule</h4>
-              <p>
-                Si <i>T</i><sub>ε</sub> &gt; 0 et grand, alors dès qu'on avance un peu dans ε, la règle s'étire beaucoup : 
-                certaines régions internes de la matière (étoiles très denses, intérieur des trous noirs) se retrouvent vite 
-                dans un régime hautement étiré.
-              </p>
-              <p>
-                Si <i>T</i><sub>ε</sub> est petit, la règle change peu sur l'axe d'échelle : on reste dans un régime doucement variant 
-                (typique des zones peu denses).
-              </p>
-              <p>
-                Ce n'est pas une "tension" au sens d'un fil qu'on tire, mais l'analogie est utile : plus la présence de 
-                densité/pression/vitesse est forte, plus la règle est "sous tension" et s'étire quand on explore la profondeur d'échelle.
-              </p>
-            </div>
-          </div>
-
-          {/* Section IV: Règle Universelle et Règles Locales */}
-          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-orange-500/30 hover:border-orange-400/50">
-            <div className="absolute inset-0 bg-gradient-to-r from-green-800/40 to-green-700/30 rounded-3xl"></div>
-            <h3 className="text-3xl font-orbitron font-bold text-orange-300 mb-6 relative z-10">IV. Règle Universelle et Règles Locales</h3>
-            <div className="space-y-6 text-gray-200 leading-relaxed relative z-10">
-              <p>
-                Cette décomposition sépare l'étirement total en une partie universelle (cosmique) et une partie locale (due aux masses environnantes). 
-                Elle permet de comprendre comment le global et le local dialoguent dans l'univers.
-              </p>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white">
-                  Σ(<i>x</i>, <i>ε</i>) = Σ<sub>U</sub>(<i>ε</i>) Σ<sub>L</sub>(<i>x</i>)
-                </div>
-              </div>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Clés</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong>Σ(<i>x</i>, <i>ε</i>)</strong> : étirement total du facteur d'échelle</li>
-                <li><strong>Σ<sub>U</sub>(<i>ε</i>)</strong> : composante universelle, état "moyen" de la règle partout dans l'univers</li>
-                <li><strong>Σ<sub>L</sub>(<i>x</i>)</strong> : composante locale, dépend du lieu et de la densité de matière</li>
-              </ul>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Fonctionnement de la Formule</h4>
-              <p>
-                La composante universelle Σ<sub>U</sub>(ε) reflète l'état "moyen" de la règle partout dans l'univers, 
-                et évolue avec la dimension d'échelle (et, via la cosmologie, avec le temps cosmique). C'est le fond sur lequel tout se joue.
-              </p>
-              <p>
-                La composante locale Σ<sub>L</sub>(<i>x</i>) dépend du lieu. Là où la matière est plus dense, 
-                où la pression est forte, où les vitesses sont relativistes, Σ<sub>L</sub> est plus grande : la règle y est davantage étirée.
-              </p>
-              <p>
-                Le produit des deux donne l'étirement effectif vu en un point <i>x</i> et à un niveau ε.
-              </p>
-
-              <div className="bg-yellow-900/40 p-6 rounded-xl border border-yellow-500/30 backdrop-blur-sm">
-                <p className="text-yellow-200 font-semibold mb-3">Intuition :</p>
-                <p className="text-yellow-200">
-                  Pense à un ruban élastique tendu globalement (Σ<sub>U</sub>), sur lequel des pinces locales (les masses) tirent en plus (Σ<sub>L</sub>). 
-                  L'effet total est la combinaison des deux. C'est exactement ce qui rend le cadre cohérent à toutes les échelles : 
-                  le global n'écrase pas le local, et le local ne contredit pas le global.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Section V: Gravitation et Déformation d'Échelle */}
-          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-red-500/30 hover:border-red-400/50">
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-800/40 to-orange-700/30 rounded-3xl"></div>
-            <h3 className="text-3xl font-orbitron font-bold text-red-300 mb-6 relative z-10">V. Gravitation et Déformation d'Échelle</h3>
-            <div className="space-y-6 text-gray-200 leading-relaxed relative z-10">
-              <p>
-                Ces équations établissent le lien fondamental entre la courbure gravitationnelle et la déformation de l'échelle. 
-                Elles montrent comment la gravité influence directement la tension de la règle d'échelle.
-              </p>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Couplage entre courbure et métrique d'échelle</h4>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white flex items-center justify-center">
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base">∂Σ(<i>x</i>, <i>ε</i>)</div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base">∂<i>x</i><sup>μ</sup></div>
-                  </div>
-                  <span className="mx-2">∝</span> <i>R</i><sub>μν</sub>(<i>x</i>, <i>ε</i>) <i>u</i><sup>ν</sup>
-                </div>
-              </div>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Clés</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong>∂Σ/∂<i>x</i><sup>μ</sup></strong> : comment Σ change quand on se déplace dans l'espace ou le temps</li>
-                <li><strong><i>R</i><sub>μν</sub></strong> : mesure de la courbure de l'espace-temps (provoquée par la masse-énergie)</li>
-                <li><strong><i>u</i><sup>ν</sup></strong> : quadrivitesse, direction de déplacement dans l'espace-temps</li>
-              </ul>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Équilibre local d'échelle</h4>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white flex items-center justify-center">
-                  ∇<sub>μ</sub>
-                  <span className="mx-1">(</span>
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base">∂Σ</div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base">∂<i>x</i><sup>μ</sup></div>
-                  </div>
-                  <span className="mx-1">)</span>
-                  <span className="mx-2">=</span>
-                  <span>8π<i>G</i> <i>ρ</i><sub>ε</sub></span>
-                </div>
-              </div>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Supplémentaires</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong>∇<sub>μ</sub></strong> : dérivée "qui respecte" la géométrie courbe (covariante)</li>
-                <li><strong><i>ρ</i><sub>ε</sub></strong> : densité d'énergie d'échelle, source interne qui "alimente" les changements d'échelle</li>
-              </ul>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Fonctionnement des Formules</h4>
-              <p>
-                Là où la gravité courbe fortement l'espace-temps, la règle d'échelle ressent cette courbure et varie spatialement/temporellement. 
-                On ne modifie pas que la géométrie : on étire aussi la règle.
-              </p>
-              <p>
-                Si <i>ρ</i><sub>ε</sub> est grande (milieu qui exige beaucoup d'étirement pour rester cohérent), 
-                alors l'équation impose que Σ varie suffisamment pour répondre à cette source.
-              </p>
-              <p>
-                Le facteur 8π<i>G</i> rappelle la structure des équations d'Einstein : c'est la version "échelle" de la relation géométrie-source.
-              </p>
-
-              <div className="bg-yellow-900/40 p-6 rounded-xl border border-yellow-500/30 backdrop-blur-sm">
-                <p className="text-yellow-200 font-semibold mb-3">Intuition :</p>
-                <p className="text-yellow-200">
-                  La gravitation (courbure) et l'échelle (étirement de la règle) se parlent. La courbure influence Σ, 
-                  et la dynamique d'échelle (via <i>ρ</i><sub>ε</sub>) répond pour maintenir un cadre mesurable (sans infinis).
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Section VI: Fin du Paradoxe des Singularités */}
+          {/* II. Le Tissu d'Espace-Temps-d'Échelle (5D) */}
           <div className="futuristic-card p-8 md:p-12 rounded-3xl border-blue-500/30 hover:border-blue-400/50">
-            <div className="absolute inset-0 bg-gradient-to-r from-red-800/40 to-red-700/30 rounded-3xl"></div>
-            <h3 className="text-3xl font-orbitron font-bold text-blue-300 mb-6 relative z-10">VI. Fin du Paradoxe des Singularités</h3>
-            <div className="space-y-6 text-gray-200 leading-relaxed relative z-10">
-              <p>
-                Ces formules montrent comment l'étirement continu du tissu d'échelle élimine les singularités. 
-                Au lieu de points infinis, nous obtenons un rééchelonnage continu de la métrique.
-              </p>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Loi d'étirement</h4>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white flex items-center justify-center flex-wrap">
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base"><i>DΣ</i></div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base"><i>Dτ</i></div>
-                  </div>
-                  <span className="mx-2">=</span>
-                  <span><i>κ</i><sub>m</sub> <i>ρc</i><sup>2</sup> + <i>κ</i><sub>p</sub> <i>p</i> + <i>κ</i><sub>k</sub> <i>ρ</i> (<i>γ</i>−1)<i>c</i><sup>2</sup></span>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-800/20 to-cyan-800/20 rounded-3xl"></div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-orbitron font-bold text-white mb-6">II. Le Tissu d'Espace-Temps-d'Échelle (5D)</h3>
+              
+              <div className="bg-slate-900/50 p-6 rounded-lg mb-6 overflow-x-auto">
+                <div className="text-center text-2xl font-serif text-white">
+                  <i>ds</i><sup>2</sup> = <i>g</i><sub>μν</sub>(<i>x</i>, ε)<i>dx</i><sup>μ</sup><i>dx</i><sup>ν</sup> + Σ<sup>2</sup>(<i>x</i>, ε)<i>dε</i><sup>2</sup>
                 </div>
               </div>
 
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Clés</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong><i>D/Dτ</i></strong> : dérivée le long de la trajectoire que suit la matière</li>
-                <li><strong><i>ρ</i></strong> : densité d'énergie locale</li>
-                <li><strong><i>p</i></strong> : pression du milieu</li>
-                <li><strong><i>γ</i> = 1/√(1−<i>v</i><sup>2</sup>/<i>c</i><sup>2</sup>)</strong> : facteur relativiste</li>
-                <li><strong><i>κ</i><sub>m</sub>, <i>κ</i><sub>p</sub>, <i>κ</i><sub>k</sub></strong> : constantes de couplage d'échelle</li>
-              </ul>
+              <div className="space-y-4 text-gray-200">
+                <h4 className="text-xl font-semibold text-blue-300 mb-3">Symboles clés</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><strong>ε</strong> : coordonnée d'échelle (5ᵉ dimension d'échelle, pas une direction spatiale) — un niveau de lecture du réel.</li>
+                  <li><strong><i>g</i><sub>μν</sub>(<i>x</i>, ε)</strong> : métrique 4D dépendante de l'échelle (la géométrie ressentie varie selon ε).</li>
+                  <li><strong>Σ(<i>x</i>, ε)</strong> : facteur d'échelle (étirement de la "règle" interne quand on change de niveau d'échelle).</li>
+                  <li><strong><i>dε</i></strong> : variation de niveau d'échelle (et non "déplacement spatial").</li>
+                  <li><strong>Σ<sup>2</sup><i>dε</i><sup>2</sup></strong> : contribution métrique de la profondeur d'échelle ; un même <i>dε</i> "compte" davantage si Σ est grande.</li>
+                </ul>
 
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Métrique physique rééchelonnée</h4>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white flex items-center justify-center">
-                  <i>ḡ</i><sub>μν</sub>(<i>x</i>, <i>ε</i>) = 
-                  <span className="mx-1">(</span>
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base">1</div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base">Σ<sup>2</sup>(<i>x</i>, <i>ε</i>)</div>
-                  </div>
-                  <span className="mx-1">)</span>
-                  <i>g</i><sub>μν</sub>(<i>x</i>, <i>ε</i>)
-                </div>
-              </div>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Supplémentaires</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong><i>ḡ</i><sub>μν</sub></strong> : métrique effectivement mesurée</li>
-                <li><strong><i>g</i><sub>μν</sub></strong> : métrique "brute" avant rééchelonnage</li>
-                <li><strong>1/Σ<sup>2</sup></strong> : facteur de rééchelonnage qui tempère les grandeurs géométriques</li>
-              </ul>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Fonctionnement des Formules</h4>
-              <p>
-                Trois contributions font grandir Σ : la densité d'énergie <i>ρc</i><sup>2</sup>, la pression <i>p</i>, 
-                et l'énergie cinétique relativiste <i>ρ</i>(<i>γ</i>−1)<i>c</i><sup>2</sup>. Plus le milieu est extrême, plus Σ augmente.
-              </p>
-              <p>
-                La métrique mesurée <i>ḡ</i><sub>μν</sub> se déduit de la métrique "brute" en la rééchelonnant par Σ. 
-                Quand Σ grandit (dans les zones denses), les grandeurs géométriques sont "tempérées" par le facteur 1/Σ<sup>2</sup>.
-              </p>
-
-              <div className="bg-yellow-900/40 p-6 rounded-xl border border-yellow-500/30 backdrop-blur-sm">
-                <p className="text-yellow-200 font-semibold mb-3">Résultat :</p>
-                <p className="text-yellow-200">
-                  Les grandeurs géométriques restent toujours finies sur la métrique mesurée. L'intérieur d'un trou noir n'est pas une rupture du réel, 
-                  mais un régime d'étirement extrême, où la matière continue d'exister sur une portion plus profonde du tissu d'échelle.
+                <h4 className="text-xl font-semibold text-blue-300 mb-3 mt-6">Fonctionnement</h4>
+                <p className="leading-relaxed">
+                  On ajoute une profondeur interne au tissu : en plus de "où/quand" (4D), on dit "à quelle échelle" on regarde. La géométrie <i>g</i><sub>μν</sub> dépend alors de ε, et l'étirement propre de la règle se mesure par Σ. Les masses, pressions, vitesses et courbure n'agissent plus seulement en 4D : elles modulent aussi l'état d'échelle. C'est ce degré de liberté supplémentaire qui permet à la théorie de relier l'infiniment petit et le très grand, et de régulariser les régimes extrêmes sans singularités.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Section VII: Refroidissement des Étoiles à Neutrons */}
-          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-cyan-500/30 hover:border-cyan-400/50">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-800/40 to-blue-700/30 rounded-3xl"></div>
-            <h3 className="text-3xl font-orbitron font-bold text-cyan-300 mb-6 relative z-10">VII. Refroidissement des Étoiles à Neutrons</h3>
-            <div className="space-y-6 text-gray-200 leading-relaxed relative z-10">
-              <p>
-                Ces formules expliquent pourquoi les étoiles à neutrons se refroidissent plus rapidement que prévu : 
-                c'est un effet de désaccord entre les couches d'échelle interne.
-              </p>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Gradient interne d'échelle</h4>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white flex items-center justify-center">
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base"><i>dΣ</i></div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base"><i>dr</i></div>
-                  </div>
-                  <span className="mx-2">∝</span> <i>ρ</i>(<i>r</i>)
-                </div>
-              </div>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Clés</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong><i>r</i></strong> : distance au centre de l'étoile</li>
-                <li><strong><i>ρ</i>(<i>r</i>)</strong> : densité en fonction de la distance au centre</li>
-                <li><strong><i>dΣ/dr</i></strong> : variation de l'échelle avec la distance radiale</li>
-              </ul>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Flux thermique modifié</h4>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white flex items-center justify-center">
-                  Φ<sub>T</sub>(<i>r</i>) = −<i>k</i>
-                  <span className="mx-1">(</span>
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base">1</div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base">Σ(<i>r</i>)</div>
-                  </div>
-                  <span className="mx-1">)</span>
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base"><i>dT</i></div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base"><i>dr</i></div>
-                  </div>
-                </div>
-              </div>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Supplémentaires</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong>Φ<sub>T</sub></strong> : flux de chaleur (énergie thermique par unité de surface et de temps)</li>
-                <li><strong><i>k</i></strong> : coefficient d'efficacité du transport thermique</li>
-                <li><strong><i>dT/dr</i></strong> : gradient de température</li>
-                <li><strong>1/Σ(<i>r</i>)</strong> : facteur de freinage du flux thermique</li>
-              </ul>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Fonctionnement des Formules</h4>
-              <p>
-                La densité <i>ρ</i>(<i>r</i>) augmente fortement quand on s'approche du cœur ; la formule dit : 
-                plus <i>ρ</i> est grande, plus Σ varie vite avec <i>r</i>. La règle d'échelle est beaucoup plus étirée au centre que vers la surface.
-              </p>
-              <p>
-                Le flux de chaleur est ralenti par l'étirement de la règle : plus Σ(<i>r</i>) est grande, plus le flux est freiné. 
-                Même si le cœur est très chaud, l'énergie met du temps à "passer" vers l'extérieur, car les couches ne "respirent" pas 
-                avec la même règle.
-              </p>
-
-              <div className="bg-yellow-900/40 p-6 rounded-xl border border-yellow-500/30 backdrop-blur-sm">
-                <p className="text-yellow-200 font-semibold mb-3">Conséquence :</p>
-                <p className="text-yellow-200">
-                  Deux couches voisines ne partagent plus le même "tempo" métrique. Elles sont comme désaccordées : l'une vibre "au ralenti" 
-                  du point de vue de l'autre. Ce que l'on appelle "refroidissement rapide" n'est pas une perte brute d'énergie ; 
-                  c'est que les échanges sont bridés par la structure d'échelle interne.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Section VIII: Expansion Cosmique et Glissement d'Échelle */}
-          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-purple-500/30 hover:border-purple-400/50">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-800/40 to-cyan-700/30 rounded-3xl"></div>
-            <h3 className="text-3xl font-orbitron font-bold text-purple-300 mb-6 relative z-10">VIII. Expansion Cosmique et Glissement d'Échelle</h3>
-            <div className="space-y-6 text-gray-200 leading-relaxed relative z-10">
-              <p>
-                Ces formules révèlent que l'univers ne s'étend pas vers l'extérieur, mais que sa règle universelle s'étire vers l'infiniment petit. 
-                Le décalage vers le rouge s'explique par ce glissement d'échelle.
-              </p>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Loi d'évolution de la règle universelle</h4>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white flex items-center justify-center">
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base"><i>dΣ</i><sub>U</sub></div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base"><i>dt</i></div>
-                  </div>
-                  <span className="mx-2">=</span> <i>H</i><sub>ε</sub> Σ<sub>U</sub>
-                </div>
-              </div>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Clés</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong>Σ<sub>U</sub></strong> : partie universelle de la règle, concerne tout l'univers</li>
-                <li><strong><i>dΣ<sub>U</sub>/dt</i></strong> : vitesse d'évolution de la règle universelle</li>
-                <li><strong><i>H</i><sub>ε</sub></strong> : paramètre analogue à Hubble, mesure la vitesse du glissement d'échelle interne</li>
-              </ul>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Décalage vers le rouge d'origine métrique</h4>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white flex items-center justify-center">
-                  1 + <i>z</i> = 
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base">Σ<sub>U</sub>(<i>t</i><sub>obs</sub>)</div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base">Σ<sub>U</sub>(<i>t</i><sub>ém</sub>)</div>
-                  </div>
-                </div>
-              </div>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Supplémentaires</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong><i>z</i></strong> : décalage vers le rouge (étirement des raies lumineuses)</li>
-                <li><strong><i>t</i><sub>obs</sub></strong> : instant d'observation</li>
-                <li><strong><i>t</i><sub>ém</sub></strong> : instant d'émission de la lumière</li>
-                <li><strong>1 + <i>z</i></strong> : ratio des règles universelles entre émission et observation</li>
-              </ul>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Fonctionnement des Formules</h4>
-              <p>
-                La règle universelle augmente proportionnellement à elle-même (si <i>H</i><sub>ε</sub> est constant, 
-                la solution est une croissance exponentielle). Au cours du temps cosmique, l'unité d\'échelle avec laquelle 
-                l'univers se mesure glisse (s'étire).
-              </p>
-              <p>
-                Le décalage vers le rouge ne vient pas d'une expansion de l'espace, mais d'un changement de la métrique d'échelle 
-                entre le moment d'émission et celui d'observation. Les photons sont "étirés" non parce qu'ils traversent un espace qui grandit, 
-                mais parce qu'ils sont mesurés dans une règle qui s'est étirée entre-temps.
-              </p>
-
-              <div className="bg-yellow-900/40 p-6 rounded-xl border border-yellow-500/30 backdrop-blur-sm">
-                <p className="text-yellow-200 font-semibold mb-3">Interprétation :</p>
-                <p className="text-yellow-200">
-                  Ce n'est pas l'espace qui gonfle comme un ballon : c'est la règle qui change. Plus Σ<sub>U</sub> augmente, 
-                  plus la lumière nous semble "rougie". C'est une explication métrique du redshift, alignée avec l'idée que l'univers 
-                  se déploie vers son infiniment petit (glissement d'échelle), et non qu'il "gonfle" vers l'extérieur.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Section IX: Les Étoiles Quantiques */}
-          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-indigo-500/30 hover:border-indigo-400/50">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-800/40 to-purple-700/30 rounded-3xl"></div>
-            <h3 className="text-3xl font-orbitron font-bold text-indigo-300 mb-6 relative z-10">IX. Les Étoiles Quantiques : Régimes d'Échelle Extrêmes</h3>
-            <div className="space-y-6 text-gray-200 leading-relaxed relative z-10">
-              <p>
-                Ces formules décrivent les objets les plus extrêmes de l'univers : les étoiles quantiques, 
-                où l'étirement d'échelle atteint des valeurs qui relient naturellement relativité et physique quantique.
-              </p>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Évolution d'échelle pendant l'effondrement</h4>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white flex items-center justify-center flex-wrap">
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base"><i>DΣ</i></div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base"><i>Dτ</i></div>
-                  </div>
-                  <span className="mx-2">=</span>
-                  <span><i>κ</i><sub>m</sub> <i>ρc</i><sup>2</sup> + <i>κ</i><sub>p</sub> <i>p</i> + <i>κ</i><sub>k</sub> <i>ρ</i> (<i>γ</i>−1)<i>c</i><sup>2</sup></span>
-                </div>
-              </div>
-
-              <p>
-                Dans un effondrement (une étoile qui se compacte), ces mêmes sources — densité <i>ρ</i>, pression <i>p</i>, 
-                vitesse relativiste (via <i>γ</i>) — alimentent l'étirement de la règle à l'intérieur. 
-                À mesure qu'on tombe vers le centre, Σ grandit, ce qui signifie : on lit la physique interne avec une règle différente, 
-                ajustée à l'extrême.
-              </p>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Équation d'état d'échelle</h4>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white flex items-center justify-center">
-                  <i>P</i><sub>ε</sub> = <i>ρ</i><sub>ε</sub><i>c</i><sup>2</sup> = 
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base">ℏ<i>c</i></div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base"><i>L</i><sub>ε</sub><sup>4</sup></div>
-                  </div>
-                </div>
-              </div>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Clés</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong><i>P</i><sub>ε</sub></strong> : pression d'échelle</li>
-                <li><strong><i>ρ</i><sub>ε</sub></strong> : densité d'énergie d'échelle</li>
-                <li><strong><i>L</i><sub>ε</sub></strong> : longueur caractéristique de la structure interne</li>
-                <li><strong>ℏ</strong> : constante de Planck réduite</li>
-                <li><strong>1/<i>L</i><sub>ε</sub><sup>4</sup></strong> : loi d'échelle reliant structure fine et énergie d\'échelle</li>
-              </ul>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Fonctionnement des Formules</h4>
-              <p>
-                Cette relation lie la pression d'échelle <i>P</i><sub>ε</sub> et la densité d'énergie d'échelle <i>ρ</i><sub>ε</sub> 
-                à une longueur caractéristique <i>L</i><sub>ε</sub>. Plus <i>L</i><sub>ε</sub> est petite (structure interne fine), 
-                plus l'énergie/pression d'échelle est grande (loi en 1/<i>L</i><sub>ε</sub><sup>4</sup>).
-              </p>
-              <p>
-                C'est comme si la structure interne, en devenant très fine, génère une pression d'échelle qui équilibre 
-                la compression gravitationnelle. On obtient alors un régime stable (étoile "quantique" au sens régime d'échelle, 
-                pas au sens d'une particule quantique isolée).
-              </p>
-
-              <div className="bg-yellow-900/40 p-6 rounded-xl border border-yellow-500/30 backdrop-blur-sm">
-                <p className="text-yellow-200 font-semibold mb-3">Message clé :</p>
-                <p className="text-yellow-200">
-                  Le cœur de l'objet n'est pas un "point" (une singularité). C'est une région où la métrique est profondément rééchelonnée. 
-                  La matière "continue" d'exister avec une métrique mesurée finie. Plutôt qu'une singularité, l'effondrement débouche 
-                  sur un état d'équilibre d'échelle où la règle tendue stabilise l'intérieur.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Section X: Le Champ d'Échelle-Temps Unifié */}
+          {/* III. La Tension de la Règle d'Échelle */}
           <div className="futuristic-card p-8 md:p-12 rounded-3xl border-green-500/30 hover:border-green-400/50">
-            <div className="absolute inset-0 bg-gradient-to-r from-indigo-800/40 to-indigo-700/30 rounded-3xl"></div>
-            <h3 className="text-3xl font-orbitron font-bold text-green-300 mb-6 relative z-10">X. Le Champ d'Échelle-Temps Unifié</h3>
-            <div className="space-y-6 text-gray-200 leading-relaxed relative z-10">
-              <p>
-                Ces équations généralisent la Relativité Générale en incluant la dynamique d'échelle. 
-                Elles montrent comment la géométrie 5D s'équilibre avec le contenu énergétique de l'univers.
-              </p>
-
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Équation du champ généralisé</h4>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white flex items-center justify-center flex-wrap">
-                  <i>G</i><sub>μν</sub>(<i>x</i>, <i>ε</i>) + Λ<sub>ε</sub> <i>g</i><sub>μν</sub>(<i>x</i>, <i>ε</i>) = 
-                  <span className="mx-1">(</span>
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base">8π<i>G</i></div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base"><i>c</i><sup>4</sup></div>
-                  </div>
-                  <span className="mx-1">)</span>
-                  <i>T</i><sub>μν</sub>(<i>x</i>, <i>ε</i>)
+            <div className="absolute inset-0 bg-gradient-to-r from-green-800/20 to-emerald-800/20 rounded-3xl"></div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-orbitron font-bold text-white mb-6">III. La Tension de la Règle d'Échelle</h3>
+              
+              <div className="bg-slate-900/50 p-6 rounded-lg mb-6 overflow-x-auto">
+                <div className="text-center text-2xl font-serif text-white">
+                  <i>T</i><sub>ε</sub> = <div className="inline-flex flex-col items-center mx-1"><div className="text-lg"><i>dΣ</i></div><div className="border-t border-gray-300 w-full"></div><div className="text-lg"><i>dε</i></div></div>
                 </div>
               </div>
 
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Clés</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong><i>G</i><sub>μν</sub></strong> : combine les différentes courbures pour donner la géométrie dynamique</li>
-                <li><strong><i>T</i><sub>μν</sub></strong> : réunit densités d'énergie, pressions, flux (matière, rayonnement, etc.)</li>
-                <li><strong>Λ<sub>ε</sub></strong> : terme cosmologique dépendant de l'échelle (non plus constant)</li>
-                <li><strong>8π<i>G</i>/<i>c</i><sup>4</sup></strong> : constante de couplage gravitationnel d'Einstein</li>
-              </ul>
+              <div className="space-y-4 text-gray-200">
+                <h4 className="text-xl font-semibold text-green-300 mb-3">Symboles clés</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><strong><i>T</i><sub>ε</sub></strong> : tension d'échelle — taux de variation de l'étirement Σ quand le niveau d'échelle ε varie.</li>
+                  <li><strong>Σ(<i>x</i>, ε)</strong> : facteur d'échelle (étirement de la règle interne).</li>
+                  <li><strong><i>dΣ</i>/<i>dε</i></strong> : dérivée par rapport à la coordonnée d'échelle (et non une direction spatiale).</li>
+                </ul>
 
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Expression de la constante cosmologique d'échelle</h4>
-              <div className="text-center text-xl bg-slate-900/50 p-6 rounded-lg overflow-x-auto">
-                <div className="font-serif text-white flex items-center justify-center">
-                  Λ<sub>ε</sub> = 
-                  <span className="mx-1">(</span>
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base">1</div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base">Σ<sup>2</sup>(<i>x</i>, <i>ε</i>)</div>
+                <h4 className="text-xl font-semibold text-green-300 mb-3 mt-6">Fonctionnement</h4>
+                <div className="space-y-3 text-sm leading-relaxed">
+                  <p>
+                    <i>T</i><sub>ε</sub> mesure la sensibilité de la règle d'échelle aux changements de niveau d'échelle : il peut être positif, nul ou négatif suivant le profil Σ(ε), profil qui est façonné physiquement par l'environnement local (densité ρ, pression <i>p</i>, vitesse <i>v</i>) et la courbure. La loi d'alimentation le long des trajectoires physiques est :
+                  </p>
+                  
+                  <div className="bg-slate-800/50 p-4 rounded-lg my-4">
+                    <div className="text-center text-lg font-serif text-white">
+                      <div className="inline-flex flex-col items-center mx-1"><div className="text-sm"><i>DΣ</i></div><div className="border-t border-gray-300 w-full"></div><div className="text-sm"><i>Dτ</i></div></div> = κ<sub>m</sub>ρ<i>c</i><sup>2</sup> + κ<sub>p</sub><i>p</i> + κ<sub>k</sub>ρ(γ-1)<i>c</i><sup>2</sup>, γ = <div className="inline-flex flex-col items-center mx-1"><div className="text-sm">1</div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">√(1-<i>v</i><sup>2</sup>/<i>c</i><sup>2</sup>)</div></div>
+                    </div>
                   </div>
-                  <span className="mx-1">)</span>
-                  <div className="inline-flex flex-col items-center mx-2">
-                    <div className="text-base"><i>d</i><sup>2</sup>Σ</div>
-                    <div className="border-t border-gray-300 w-full"></div>
-                    <div className="text-base"><i>dε</i><sup>2</sup></div>
-                  </div>
+
+                  <p>
+                    ce qui relie explicitement la croissance de Σ aux conditions du milieu. Ainsi, ce n'est pas "aller vers l'infiniment petit" qui, en soi, augmente la tension : ce sont les régimes extrêmes (forte ρ, <i>p</i>, <i>v</i>) qui imposent un étirement plus soutenu. <i>T</i><sub>ε</sub> est une tension métrique (élasticité interne du tissu), et son rôle central est de remplacer la rupture (singularité) par un étirement continu dans la dimension d'échelle.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* IV. Règle Universelle et Règles Locales */}
+          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-yellow-500/30 hover:border-yellow-400/50">
+            <div className="absolute inset-0 bg-gradient-to-r from-yellow-800/20 to-orange-800/20 rounded-3xl"></div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-orbitron font-bold text-white mb-6">IV. Règle Universelle et Règles Locales</h3>
+              
+              <div className="bg-slate-900/50 p-6 rounded-lg mb-6 overflow-x-auto">
+                <div className="text-center text-2xl font-serif text-white">
+                  Σ(<i>x</i>, ε) = Σ<sub>U</sub>(ε)Σ<sub>L</sub>(<i>x</i>)
                 </div>
               </div>
 
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Symboles Supplémentaires</h4>
-              <ul className="space-y-3 text-gray-200">
-                <li><strong><i>d</i><sup>2</sup>Σ/<i>dε</i><sup>2</sup></strong> : courbure de la règle (dérivée seconde par rapport à l'échelle)</li>
-                <li><strong>1/Σ<sup>2</sup></strong> : pondération par l'étirement de la règle</li>
-              </ul>
+              <div className="space-y-4 text-gray-200">
+                <h4 className="text-xl font-semibold text-yellow-300 mb-3">Symboles clés</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><strong>Σ<sub>U</sub>(ε)</strong> : règle universelle (composante globale, doucement variable à l'échelle cosmique).</li>
+                  <li><strong>Σ<sub>L</sub>(<i>x</i>)</strong> : règle locale (dépend du lieu, donc de ρ, <i>p</i>, <i>v</i> et de la courbure locale).</li>
+                  <li><strong>Σ(<i>x</i>, ε)</strong> : étirement effectif vu en (<i>x</i>, ε).</li>
+                </ul>
 
-              <h4 className="text-xl font-orbitron font-semibold text-cyan-300 mb-4">Fonctionnement des Formules</h4>
-              <p>
-                C'est l'équilibre général entre la géométrie (y compris l'échelle) et les contenus physiques. 
-                Si Λ<sub>ε</sub> change avec ε, la "pression cosmologique" apparente évolue avec la profondeur d'échelle.
-              </p>
-              <p>
-                Si Σ ne varie pas avec ε, <i>d</i><sup>2</sup>Σ/<i>dε</i><sup>2</sup> = 0, donc Λ<sub>ε</sub> = 0. 
-                On retombe alors sur la Relativité Générale classique (pas de dynamique d'échelle).
-              </p>
-              <p>
-                Si Σ varie, Λ<sub>ε</sub> devient non nulle et encode la contribution métrique d'échelle à grande échelle (cosmologie) 
-                ou en environnements extrêmes (intérieurs compacts).
-              </p>
-
-              <div className="bg-yellow-900/40 p-6 rounded-xl border border-yellow-500/30 backdrop-blur-sm">
-                <p className="text-yellow-200 font-semibold mb-3">Intuition :</p>
-                <p className="text-yellow-200">
-                  Au lieu d'une "énergie sombre" mystérieuse, on a un terme géométrique d'échelle issu de la physique de la règle elle-même. 
-                  C'est une manière élégante d'expliquer des effets cosmologiques sans postuler une constante fixe.
+                <h4 className="text-xl font-semibold text-yellow-300 mb-3 mt-6">Fonctionnement</h4>
+                <p className="leading-relaxed">
+                  L'étirement total factorise en un fond universel et une modulation locale. Σ<sub>U</sub> fixe la tension moyenne du tissu (cosmologie), tandis que Σ<sub>L</sub> encode la réponse locale des régions denses/rapides. C'est cette combinaison qui permet de cohérer les échelles : le global n'écrase pas le local, et le local ne contredit pas le global. Les phénomènes observés (flux thermiques, temps mesurés, redshift métrique) s'interprètent alors comme des effets de mesure avec une règle Σ variable.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Section XI: Grandeurs Fondamentales */}
-          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-yellow-500/30 hover:border-yellow-400/50">
-            <div className="absolute inset-0 bg-gradient-to-r from-green-800/40 to-green-700/30 rounded-3xl"></div>
-            <h3 className="text-3xl font-orbitron font-bold text-yellow-300 mb-6 relative z-10">XI. Grandeurs Fondamentales</h3>
-            <div className="space-y-4 text-gray-200 leading-relaxed relative z-10">
-              <div className="overflow-x-auto">
-                <table className="min-w-full bg-slate-900/50 rounded-lg text-left text-gray-200">
-                  <thead>
-                    <tr>
-                      <th className="py-3 px-4 border-b border-slate-700">Symbole</th>
-                      <th className="py-3 px-4 border-b border-slate-700">Signification</th>
-                      <th className="py-3 px-4 border-b border-slate-700">Domaine</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="py-2 px-4 border-b border-slate-800 font-serif"><i>x</i><sup>μ</sup></td>
-                      <td className="py-2 px-4 border-b border-slate-800">Coordonnées d'espace-temps</td>
-                      <td className="py-2 px-4 border-b border-slate-800">4D</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 px-4 border-b border-slate-800 font-serif"><i>ε</i></td>
-                      <td className="py-2 px-4 border-b border-slate-800">Coordonnée d'échelle (5ᵉ dimension)</td>
-                      <td className="py-2 px-4 border-b border-slate-800">interne</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 px-4 border-b border-slate-800 font-serif"><i>g</i><sub>μν</sub>(<i>x</i>, <i>ε</i>)</td>
-                      <td className="py-2 px-4 border-b border-slate-800">Métrique dépendante de l'échelle</td>
-                      <td className="py-2 px-4 border-b border-slate-800">tenseur</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 px-4 border-b border-slate-800 font-serif">Σ(<i>x</i>, <i>ε</i>)</td>
-                      <td className="py-2 px-4 border-b border-slate-800">Facteur d'échelle (tension du tissu)</td>
-                      <td className="py-2 px-4 border-b border-slate-800">scalaire</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 px-4 border-b border-slate-800 font-serif"><i>T</i><sub>ε</sub></td>
-                      <td className="py-2 px-4 border-b border-slate-800">Tension d'échelle</td>
-                      <td className="py-2 px-4 border-b border-slate-800">scalaire</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 px-4 border-b border-slate-800 font-serif"><i>ρ</i><sub>ε</sub></td>
-                      <td className="py-2 px-4 border-b border-slate-800">Densité d'énergie d'échelle</td>
-                      <td className="py-2 px-4 border-b border-slate-800">scalaire</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 px-4 border-b border-slate-800 font-serif"><i>H</i><sub>ε</sub></td>
-                      <td className="py-2 px-4 border-b border-slate-800">Taux de glissement d'échelle</td>
-                      <td className="py-2 px-4 border-b border-slate-800">scalaire</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 px-4 border-b border-slate-800 font-serif">Λ<sub>ε</sub></td>
-                      <td className="py-2 px-4 border-b border-slate-800">Constante cosmologique d'échelle</td>
-                      <td className="py-2 px-4 border-b border-slate-800">scalaire</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 px-4 font-serif"><i>P</i><sub>ε</sub></td>
-                      <td className="py-2 px-4">Pression d'échelle</td>
-                      <td className="py-2 px-4">scalaire</td>
-                    </tr>
-                  </tbody>
-                </table>
+          {/* V. Gravitation et Déformation d'Échelle */}
+          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-red-500/30 hover:border-red-400/50">
+            <div className="absolute inset-0 bg-gradient-to-r from-red-800/20 to-pink-800/20 rounded-3xl"></div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-orbitron font-bold text-white mb-6">V. Gravitation et Déformation d'Échelle</h3>
+              
+              <div className="bg-slate-900/50 p-6 rounded-lg mb-6 overflow-x-auto">
+                <div className="text-center text-lg font-serif text-white space-y-2">
+                  <div><div className="inline-flex flex-col items-center mx-1"><div className="text-sm">∂Σ(<i>x</i>, ε)</div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">∂<i>x</i><sup>μ</sup></div></div> ∝ <i>R</i><sub>μν</sub>(<i>x</i>, ε)<i>u</i><sup>ν</sup></div>
+                  <div>∇<sub>μ</sub><span className="mx-1">(</span><div className="inline-flex flex-col items-center mx-1"><div className="text-sm">∂Σ</div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">∂<i>x</i><sup>μ</sup></div></div><span className="mx-1">)</span> = 8π<i>G</i>ρ<sub>ε</sub></div>
+                </div>
+              </div>
+
+              <div className="space-y-4 text-gray-200">
+                <h4 className="text-xl font-semibold text-red-300 mb-3">Symboles clés</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><strong>∂<sub>μ</sub>Σ</strong> : variation de l'étirement selon l'espace-temps (proportionnalité phénoménologique).</li>
+                  <li><strong><i>R</i><sub>μν</sub></strong> : tenseur de Ricci (mesure de courbure gravitationnelle).</li>
+                  <li><strong><i>u</i><sup>ν</sup></strong> : quadrivitesse (direction du mouvement en 4D).</li>
+                  <li><strong>∇<sub>μ</sub></strong> : dérivée covariante (respecte la géométrie courbe).</li>
+                  <li><strong>ρ<sub>ε</sub></strong> : densité d'énergie d\'échelle (source interne des variations de Σ).</li>
+                  <li><strong><i>G</i></strong> : constante de gravitation.</li>
+                </ul>
+
+                <h4 className="text-xl font-semibold text-red-300 mb-3 mt-6">Fonctionnement</h4>
+                <p className="leading-relaxed">
+                  La gravité ne courbe pas seulement l'espace-temps : elle tend aussi la règle d'échelle. La première relation lie variation spatiale-temporelle de Σ à la courbure projetée le long du mouvement <i>u</i><sup>ν</sup>. La seconde relation, de type "équation de source", dit que la divergence du gradient de Σ répond à la densité d'énergie d'échelle ρ<sub>ε</sub>. Ensemble, elles décrivent un dialogue : la géométrie influence l'échelle, et la dynamique d'échelle (via ρ<sub>ε</sub>) répond pour maintenir un cadre mesurable sans infinis.
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Conclusion */}
-          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-purple-500/30 hover:border-purple-400/50">
-            <div className="absolute inset-0 bg-gradient-to-r from-yellow-800/40 to-yellow-700/30 rounded-3xl"></div>
-            <h3 className="text-3xl font-orbitron font-bold text-purple-300 mb-6 relative z-10">Conclusion</h3>
-            <div className="space-y-4 text-gray-200 leading-relaxed relative z-10">
-              <p>
-                La Relativité des Échelles révèle un univers sans rupture, sans infini, sans frontière.
-                Le tissu d'espace-temps-d'échelle s'étire en permanence, répondant à la présence de masse, d'énergie et de mouvement.
-                Les trous noirs deviennent des transitions continues d'échelle ; les étoiles à neutrons, des instruments d'accord interne ; et les étoiles quantiques, des régimes d'équilibre où le cosmos relie ses extrêmes.
-              </p>
-              <p className="text-purple-300 font-semibold">
-                L'univers ne grandit pas vers l'extérieur.
-                Il se déploie vers son infiniment petit, par la tension vivante de sa propre règle d'échelle.
-              </p>
+          {/* VI. Fin du Paradoxe des Singularités */}
+          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-indigo-500/30 hover:border-indigo-400/50">
+            <div className="absolute inset-0 bg-gradient-to-r from-indigo-800/20 to-purple-800/20 rounded-3xl"></div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-orbitron font-bold text-white mb-6">VI. Fin du Paradoxe des Singularités</h3>
+              
+              <div className="bg-slate-900/50 p-6 rounded-lg mb-6 overflow-x-auto">
+                <div className="text-center text-lg font-serif text-white space-y-2">
+                  <div><div className="inline-flex flex-col items-center mx-1"><div className="text-sm"><i>DΣ</i></div><div className="border-t border-gray-300 w-full"></div><div className="text-sm"><i>Dτ</i></div></div> = κ<sub>m</sub>ρ<i>c</i><sup>2</sup> + κ<sub>p</sub><i>p</i> + κ<sub>k</sub>ρ(γ-1)<i>c</i><sup>2</sup></div>
+                  <div>ḡ<sub>μν</sub>(<i>x</i>, ε) = <div className="inline-flex flex-col items-center mx-1"><div className="text-sm">1</div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">Σ<sup>2</sup>(<i>x</i>, ε)</div></div><i>g</i><sub>μν</sub>(<i>x</i>, ε)</div>
+                </div>
+              </div>
+
+              <div className="space-y-4 text-gray-200">
+                <h4 className="text-xl font-semibold text-indigo-300 mb-3">Symboles clés</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><strong><i>D</i>/<i>Dτ</i></strong> : dérivée le long de la ligne d'univers (temps propre).</li>
+                  <li><strong>ρ</strong> : densité d'énergie ; <strong><i>p</i></strong> : pression ; <strong>γ</strong> : facteur relativiste.</li>
+                  <li><strong>κ<sub>m</sub>, κ<sub>p</sub>, κ<sub>k</sub></strong> : coefficients de couplage d'échelle.</li>
+                  <li><strong><i>g</i><sub>μν</sub></strong> : métrique "brute" dépendante de ε ; <strong>ḡ<sub>μν</sub></strong> : métrique mesurée (rééchelonnée).</li>
+                  <li><strong>1/Σ<sup>2</sup></strong> : facteur de renormalisation métrique.</li>
+                </ul>
+
+                <h4 className="text-xl font-semibold text-indigo-300 mb-3 mt-6">Fonctionnement</h4>
+                <p className="leading-relaxed">
+                  La première loi montre comment l'étirement croît physiquement avec ρ, <i>p</i>, <i>v</i> (via γ). La seconde définit la métrique effective réellement mesurée : ḡ = <i>g</i>/Σ<sup>2</sup>. Conséquence cruciale : les invariants observables (courbures, densités effectives, durées) se calculent sur ḡ, de sorte qu'ils restent finis même au cœur des régions extrêmes. La "singularité" n'est plus une rupture : c'est un régime d'échelle où la règle est profondément étirée.
+                </p>
+              </div>
             </div>
           </div>
 
+          {/* VII. Refroidissement des Étoiles à Neutrons */}
+          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-cyan-500/30 hover:border-cyan-400/50">
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-800/20 to-blue-800/20 rounded-3xl"></div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-orbitron font-bold text-white mb-6">VII. Refroidissement des Étoiles à Neutrons</h3>
+              
+              <div className="bg-slate-900/50 p-6 rounded-lg mb-6 overflow-x-auto">
+                <div className="text-center text-lg font-serif text-white space-y-2">
+                  <div><div className="inline-flex flex-col items-center mx-1"><div className="text-sm"><i>dΣ</i></div><div className="border-t border-gray-300 w-full"></div><div className="text-sm"><i>dr</i></div></div> ∝ ρ(<i>r</i>)</div>
+                  <div>Φ<sub>T</sub>(<i>r</i>) = -<i>k</i> <div className="inline-flex flex-col items-center mx-1"><div className="text-sm">1</div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">Σ(<i>r</i>)</div></div> <div className="inline-flex flex-col items-center mx-1"><div className="text-sm"><i>dT</i></div><div className="border-t border-gray-300 w-full"></div><div className="text-sm"><i>dr</i></div></div></div>
+                </div>
+              </div>
+
+              <div className="space-y-4 text-gray-200">
+                <h4 className="text-xl font-semibold text-cyan-300 mb-3">Symboles clés</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><strong><i>r</i></strong> : rayon (distance au centre de l'étoile).</li>
+                  <li><strong>ρ(<i>r</i>)</strong> : densité radiale.</li>
+                  <li><strong>Σ(<i>r</i>)</strong> : facteur d'échelle selon <i>r</i>.</li>
+                  <li><strong>Φ<sub>T</sub></strong> : flux thermique radial ; <strong><i>T</i></strong> : température ; <strong><i>k</i></strong> : conductivité effective.</li>
+                </ul>
+
+                <h4 className="text-xl font-semibold text-cyan-300 mb-3 mt-6">Fonctionnement</h4>
+                <p className="leading-relaxed">
+                  La densité croît vers le centre ⇒ Σ varie plus vite (règle plus étirée au cœur). Le facteur 1/Σ(<i>r</i>) freine le flux de chaleur : des couches voisines se retrouvent désaccordées métriquement, ce qui ralentit les échanges thermiques. Le "refroidissement rapide" observé n'est pas une fuite d'énergie, mais un ralentissement des transferts entre couches d'échelle différentes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* VIII. Expansion Cosmique et Glissement d'Échelle */}
+          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-purple-500/30 hover:border-purple-400/50">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-800/20 to-indigo-800/20 rounded-3xl"></div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-orbitron font-bold text-white mb-6">VIII. Expansion Cosmique et Glissement d'Échelle</h3>
+              
+              <div className="bg-slate-900/50 p-6 rounded-lg mb-6 overflow-x-auto">
+                <div className="text-center text-lg font-serif text-white space-y-2">
+                  <div><div className="inline-flex flex-col items-center mx-1"><div className="text-sm"><i>dΣ<sub>U</sub></i></div><div className="border-t border-gray-300 w-full"></div><div className="text-sm"><i>dt</i></div></div> = <i>H</i><sub>ε</sub>Σ<sub>U</sub></div>
+                  <div>1 + <i>z</i> = <div className="inline-flex flex-col items-center mx-1"><div className="text-sm">Σ<sub>U</sub>(<i>t</i><sub>obs</sub>)</div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">Σ<sub>U</sub>(<i>t</i><sub>ém</sub>)</div></div></div>
+                </div>
+              </div>
+
+              <div className="space-y-4 text-gray-200">
+                <h4 className="text-xl font-semibold text-purple-300 mb-3">Symboles clés</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><strong>Σ<sub>U</sub></strong> : règle universelle (composante globale de Σ).</li>
+                  <li><strong><i>H</i><sub>ε</sub></strong> : taux de glissement d'échelle (analogue de Hubble, mais pour l'échelle).</li>
+                  <li><strong><i>z</i></strong> : décalage spectral (redshift) ; <strong><i>t</i><sub>ém</sub>, <i>t</i><sub>obs</sub></strong> : instants d'émission/observation.</li>
+                </ul>
+
+                <h4 className="text-xl font-semibold text-purple-300 mb-3 mt-6">Fonctionnement</h4>
+                <p className="leading-relaxed">
+                  Si <i>H</i><sub>ε</sub> est quasi constant, Σ<sub>U</sub> croît (exponentiellement si <i>H</i><sub>ε</sub> cte). Le redshift n'est pas dû à un "espace qui gonfle", mais au fait que nous mesurons le photon avec une règle universelle qui a changé entre émission et observation :
+                </p>
+                <div className="bg-slate-800/50 p-4 rounded-lg my-4">
+                  <div className="text-center text-lg font-serif text-white">
+                    1 + <i>z</i> = <div className="inline-flex flex-col items-center mx-1"><div className="text-sm">Σ<sub>U</sub>(<i>t</i><sub>obs</sub>)</div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">Σ<sub>U</sub>(<i>t</i><sub>ém</sub>)</div></div>
+                  </div>
+                </div>
+                <p className="leading-relaxed">
+                  Plus Σ<sub>U</sub> augmente, plus les longueurs d'onde mesurées apparaissent grandes. C'est une explication métrique du redshift : l'univers se déploie vers son infiniment petit (glissement d'échelle) plutôt qu'il ne s'étend "vers l'extérieur".
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* IX. Les Étoiles Quantiques : Régimes d'Échelle Extrêmes */}
+          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-orange-500/30 hover:border-orange-400/50">
+            <div className="absolute inset-0 bg-gradient-to-r from-orange-800/20 to-red-800/20 rounded-3xl"></div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-orbitron font-bold text-white mb-6">IX. Les Étoiles Quantiques : Régimes d'Échelle Extrêmes</h3>
+              
+              <div className="bg-slate-900/50 p-6 rounded-lg mb-6 overflow-x-auto">
+                <div className="text-center text-lg font-serif text-white space-y-2">
+                  <div><div className="inline-flex flex-col items-center mx-1"><div className="text-sm"><i>DΣ</i></div><div className="border-t border-gray-300 w-full"></div><div className="text-sm"><i>Dτ</i></div></div> = κ<sub>m</sub>ρ<i>c</i><sup>2</sup> + κ<sub>p</sub><i>p</i> + κ<sub>k</sub>ρ(γ-1)<i>c</i><sup>2</sup></div>
+                  <div><i>P</i><sub>ε</sub> = ρ<sub>ε</sub><i>c</i><sup>2</sup> = <div className="inline-flex flex-col items-center mx-1"><div className="text-sm">ℏ<i>c</i></div><div className="border-t border-gray-300 w-full"></div><div className="text-sm"><i>L</i><sub>ε</sub><sup>4</sup></div></div></div>
+                </div>
+              </div>
+
+              <div className="space-y-4 text-gray-200">
+                <h4 className="text-xl font-semibold text-orange-300 mb-3">Symboles clés</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><strong>ρ, <i>p</i>, γ</strong> : état interne (densité, pression, relativité des vitesses).</li>
+                  <li><strong>κ<sub>m</sub>, κ<sub>p</sub>, κ<sub>k</sub></strong> : couplages d'échelle.</li>
+                  <li><strong><i>P</i><sub>ε</sub></strong> : pression d'échelle ; <strong>ρ<sub>ε</sub></strong> : densité d'énergie d'échelle.</li>
+                  <li><strong><i>L</i><sub>ε</sub></strong> : longueur d'échelle caractéristique interne.</li>
+                  <li><strong>ℏ</strong> : constante de Planck réduite.</li>
+                </ul>
+
+                <h4 className="text-xl font-semibold text-orange-300 mb-3 mt-6">Fonctionnement</h4>
+                <p className="leading-relaxed">
+                  Lors d'un effondrement, la même loi d'alimentation augmente Σ vers le centre : on lit l'intérieur avec une règle profondément rééchelonnée. L'équation d'état d'échelle <i>P</i><sub>ε</sub> = ℏ<i>c</i>/<i>L</i><sub>ε</sub><sup>4</sup> montre qu'une structure plus fine (petit <i>L</i><sub>ε</sub>) porte une pression d'échelle plus grande, capable d'équilibrer la compression gravitationnelle. On obtient un régime d'échelle stable (étoile "quantique" au sens du régime), sans point singulier, lisible avec ḡ = <i>g</i>/Σ<sup>2</sup>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* X. Le Champ d'Échelle-Temps Unifié */}
+          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-pink-500/30 hover:border-pink-400/50">
+            <div className="absolute inset-0 bg-gradient-to-r from-pink-800/20 to-purple-800/20 rounded-3xl"></div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-orbitron font-bold text-white mb-6">X. Le Champ d'Échelle-Temps Unifié</h3>
+              
+              <div className="bg-slate-900/50 p-6 rounded-lg mb-6 overflow-x-auto">
+                <div className="text-center text-lg font-serif text-white space-y-2">
+                  <div><i>G</i><sub>μν</sub>(<i>x</i>, ε) + Λ<sub>ε</sub><i>g</i><sub>μν</sub>(<i>x</i>, ε) = <div className="inline-flex flex-col items-center mx-1"><div className="text-sm">8π<i>G</i></div><div className="border-t border-gray-300 w-full"></div><div className="text-sm"><i>c</i><sup>4</sup></div></div><i>T</i><sub>μν</sub>(<i>x</i>, ε)</div>
+                  <div>Λ<sub>ε</sub> = <div className="inline-flex flex-col items-center mx-1"><div className="text-sm">1</div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">Σ<sup>2</sup>(<i>x</i>, ε)</div></div> <div className="inline-flex flex-col items-center mx-1"><div className="text-sm"><i>d</i><sup>2</sup>Σ</div><div className="border-t border-gray-300 w-full"></div><div className="text-sm"><i>dε</i><sup>2</sup></div></div></div>
+                </div>
+              </div>
+
+              <div className="space-y-4 text-gray-200">
+                <h4 className="text-xl font-semibold text-pink-300 mb-3">Symboles clés</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><strong><i>G</i><sub>μν</sub></strong> : tenseur d'Einstein (combinaison de courbures).</li>
+                  <li><strong><i>T</i><sub>μν</sub></strong> : tenseur énergie-impulsion (matière, rayonnement, flux).</li>
+                  <li><strong>Λ<sub>ε</sub></strong> : terme d'échelle jouant le rôle d'une "constante cosmologique dynamique".</li>
+                  <li><strong><i>d</i><sup>2</sup>Σ/<i>dε</i><sup>2</sup></strong> : courbure de la règle le long de l'échelle, pondérée par 1/Σ<sup>2</sup>.</li>
+                </ul>
+
+                <h4 className="text-xl font-semibold text-pink-300 mb-3 mt-6">Fonctionnement</h4>
+                <p className="leading-relaxed">
+                  Cette équation généralise la RG : le terme Λ<sub>ε</sub> provient intrinsèquement de la dynamique d'échelle (courbure de Σ en ε). Si ∂<sub>ε</sub>Σ = 0, alors Λ<sub>ε</sub> = 0 et on retrouve la RG classique. Si Λ<sub>ε</sub> est effectivement constant à grande échelle, on mime la constante cosmologique d'Einstein (interprétée ici comme un cas particulier de la dynamique d'échelle). La cosmologie de fond peut alors être reproduite sans postuler une "expansion matérielle" de l'espace : le glissement d'échelle (via Σ<sub>U</sub>) suffit à expliquer les observables de type distance–redshift.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* XI. Principe d'Action du Tissu d'Espace-Temps-d'Échelle */}
+          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-teal-500/30 hover:border-teal-400/50">
+            <div className="absolute inset-0 bg-gradient-to-r from-teal-800/20 to-cyan-800/20 rounded-3xl"></div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-orbitron font-bold text-white mb-6">XI. Principe d'Action du Tissu d'Espace-Temps-d'Échelle</h3>
+              
+              <p className="text-gray-200 leading-relaxed mb-4">
+                Cette formule représente le cœur du modèle.
+              </p>
+              <p className="text-gray-200 leading-relaxed mb-6">
+                Elle exprime la manière dont le tissu d'espace-temps-d'échelle se structure de lui-même en fonction de sa courbure, de sa tension interne et du contenu énergétique de la matière.
+                C'est à partir de ce principe que l'on peut dériver toutes les autres équations de la Relativité des Échelles.
+              </p>
+              
+              <div className="bg-slate-900/50 p-6 rounded-lg mb-6 overflow-x-auto">
+                <div className="text-center text-lg font-serif text-white">
+                  <i>S</i> = ∫ √<span className="mx-1">-</span><i>g</i> <span className="mx-1">[</span><div className="inline-flex flex-col items-center mx-1"><div className="text-sm">1</div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">16π<i>G</i></div></div> <i>R</i><sub>5</sub> <span className="mx-1">−</span> <div className="inline-flex flex-col items-center mx-1"><div className="text-sm">1</div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">2</div></div> <i>g</i><sup><i>AB</i></sup>∂<sub><i>A</i></sub>Σ ∂<sub><i>B</i></sub>Σ <span className="mx-1">−</span> <i>V</i>(Σ) <span className="mx-1">+</span> <i>L</i><sub>matière</sub><span className="mx-1">]</span> <i>d</i><sup>4</sup><i>x</i> <i>dε</i>
+                </div>
+              </div>
+
+              <div className="space-y-4 text-gray-200">
+                <h4 className="text-xl font-semibold text-teal-300 mb-3">Symboles clés</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><strong><i>S</i></strong> : action totale du tissu d'échelle-temps</li>
+                  <li><strong><i>R</i><sub>5</sub></strong> : courbure scalaire de la métrique 5D (tenant compte de la cinquième dimension d'échelle)</li>
+                  <li><strong><i>g</i><sup><i>AB</i></sup></strong> : composantes de la métrique 5D</li>
+                  <li><strong>∂<sub><i>A</i></sub>Σ</strong> : dérivée du facteur d'échelle par rapport à la coordonnée <i>A</i> (qui peut être temporelle, spatiale ou d'échelle)</li>
+                  <li><strong><i>V</i>(Σ)</strong> : potentiel d'échelle interne, représentant la tension naturelle du tissu</li>
+                  <li><strong><i>L</i><sub>matière</sub></strong> : lagrangien de la matière et de l'énergie contenues dans le tissu</li>
+                  <li><strong>√<span className="mx-1">-</span><i>g</i></strong> : facteur de volume géométrique, assurant la covariance générale</li>
+                  <li><strong><i>d</i><sup>4</sup><i>x</i> <i>dε</i></strong> : intégration sur les quatre dimensions d'espace-temps et la cinquième dimension d'échelle</li>
+                </ul>
+
+                <h4 className="text-xl font-semibold text-teal-300 mb-3 mt-6">Fonctionnement de la formule</h4>
+                <div className="space-y-3 text-sm leading-relaxed">
+                  <p>
+                    Cette action décrit comment le tissu d'échelle-temps cherche son état de moindre "énergie géométrique" :
+                  </p>
+                  <p>
+                    Le premier terme <div className="inline-flex flex-col items-center mx-1"><div className="text-sm"><i>R</i><sub>5</sub></div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">16π<i>G</i></div></div> relie la géométrie à la gravitation (comme dans la Relativité Générale).
+                  </p>
+                  <p>
+                    Le second terme <span className="mx-1">−</span><div className="inline-flex flex-col items-center mx-1"><div className="text-sm">1</div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">2</div></div><i>g</i><sup><i>AB</i></sup>∂<sub><i>A</i></sub>Σ∂<sub><i>B</i></sub>Σ décrit la dynamique interne de la règle d'échelle : il introduit une "tension" physique dans la cinquième dimension.
+                  </p>
+                  <p>
+                    Le potentiel <i>V</i>(Σ) fixe une valeur d'équilibre pour la règle d'échelle, maintenant la stabilité du tissu.
+                  </p>
+                  <p>
+                    Enfin, <i>L</i><sub>matière</sub> relie cette géométrie à la matière réelle, de sorte que chaque particule, étoile ou galaxie contribue localement à la courbure et à la tension de la règle.
+                  </p>
+                  <p>
+                    Ce principe d'action unifie ainsi gravitation, tension d'échelle et énergie-matière au sein d'une même formulation géométrique.
+                    De lui découlent, par dérivation variationnelle, les équations de champ du tissu 5D et l'équation dynamique du champ d'échelle Σ.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* XII. Équation Dynamique du Champ d'Échelle */}
+          <div className="futuristic-card p-8 md:p-12 rounded-3xl border-pink-500/30 hover:border-pink-400/50">
+            <div className="absolute inset-0 bg-gradient-to-r from-pink-800/20 to-purple-800/20 rounded-3xl"></div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-orbitron font-bold text-white mb-6">XII. Équation Dynamique du Champ d'Échelle</h3>
+              
+              <p className="text-gray-200 leading-relaxed mb-4">
+                Cette équation décrit l'évolution du facteur d'échelle Σ dans la cinquième dimension.
+              </p>
+              <p className="text-gray-200 leading-relaxed mb-6">
+                Elle montre comment la règle d'échelle se tend, se détend ou s'équilibre sous l'effet de la matière, de la courbure et de sa propre énergie interne.
+              </p>
+              
+              <div className="bg-slate-900/50 p-6 rounded-lg mb-6 overflow-x-auto">
+                <div className="text-center text-lg font-serif text-white">
+                  □<sub>5</sub>Σ <span className="mx-1">−</span> <div className="inline-flex flex-col items-center mx-1"><div className="text-sm">∂<i>V</i></div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">∂Σ</div></div> = α<i>T</i>(<i>x</i>,ε)
+                </div>
+              </div>
+
+              <div className="space-y-4 text-gray-200">
+                <h4 className="text-xl font-semibold text-pink-300 mb-3">Symboles clés</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><strong>□<sub>5</sub></strong> : opérateur d'Alembert 5D, représentant la propagation et la diffusion de l\'étirement du tissu (□<sub>5</sub> = <i>g</i><sup><i>AB</i></sup>∇<sub><i>A</i></sub>∇<sub><i>B</i></sub>)</li>
+                  <li><strong>Σ(<i>x</i>,ε)</strong> : facteur d'échelle, champ scalaire décrivant la dilatation interne du tissu</li>
+                  <li><strong><i>V</i>(Σ)</strong> : potentiel d'échelle, fonction de stabilisation de la règle (souvent de forme quadratique ou quartique)</li>
+                  <li><strong><div className="inline-flex flex-col items-center mx-1"><div className="text-sm">∂<i>V</i></div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">∂Σ</div></div></strong> : force interne d'échelle, qui tend à ramener Σ vers son équilibre</li>
+                  <li><strong>α</strong> : constante de couplage entre la matière et la dynamique d'échelle</li>
+                  <li><strong><i>T</i>(<i>x</i>,ε)</strong> : trace du tenseur d'énergie-impulsion 5D (matière et énergie contenues dans le tissu)</li>
+                </ul>
+
+                <h4 className="text-xl font-semibold text-pink-300 mb-3 mt-6">Fonctionnement de la formule</h4>
+                <div className="space-y-3 text-sm leading-relaxed">
+                  <p>
+                    L'équation indique que la variation du facteur d'échelle se propage dans le tissu comme une onde géométrique :
+                  </p>
+                  <p>
+                    Le terme □<sub>5</sub>Σ représente la propagation de la déformation de la règle à travers l'espace, le temps et l'échelle.
+                  </p>
+                  <p>
+                    Le terme <span className="mx-1">−</span><div className="inline-flex flex-col items-center mx-1"><div className="text-sm">∂<i>V</i></div><div className="border-t border-gray-300 w-full"></div><div className="text-sm">∂Σ</div></div> correspond à la force de rappel interne du tissu : il empêche l'étirement de devenir infini et maintient la stabilité métrique.
+                  </p>
+                  <p>
+                    Le terme α<i>T</i>(<i>x</i>,ε) exprime le couplage entre la matière et la règle : plus la densité d'énergie est forte, plus la tension d'échelle s'accroît.
+                  </p>
+                  <p>
+                    Cette équation est le moteur fondamental de la Relativité des Échelles : elle détermine comment la règle universelle se modifie sous l'effet des sources physiques, et comment les variations d'échelle locales et globales se propagent et s'ajustent.
+                    Elle englobe les comportements de la gravitation, de la cosmologie et des régimes extrêmes (comme les étoiles quantiques) au sein d'une seule et même dynamique.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Explication détaillée des symboles */}
+        <div className="futuristic-card p-8 md:p-12 rounded-3xl border-emerald-500/30 hover:border-emerald-400/50">
+          <div className="absolute inset-0 bg-gradient-to-r from-emerald-800/20 to-teal-800/20 rounded-3xl"></div>
+          <div className="relative z-10">
+            <h3 className="text-3xl font-orbitron font-bold text-white mb-8">Explication détaillée des symboles</h3>
+            
+            <div className="space-y-8">
+              {/* 1. Indices et dérivées fondamentales */}
+              <div className="bg-slate-800/40 p-6 rounded-xl border border-emerald-500/20">
+                <h4 className="text-xl font-semibold text-emerald-300 mb-4">1. Indices et dérivées fondamentales</h4>
+                <div className="space-y-4 text-gray-200 text-sm leading-relaxed">
+                  <div>
+                    <strong className="text-emerald-200">μ, ν (indices grecs)</strong><br />
+                    Ces indices représentent les quatre dimensions classiques de l'espace-temps : une pour le temps (μ=0) et trois pour l'espace (μ=1,2,3). Ils servent à identifier quelle composante d'un vecteur ou d'un tenseur on considère dans un calcul. Dans les équations de la relativité, ils permettent de relier des grandeurs temporelles et spatiales dans une même écriture compacte.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">A, B (indices latins majuscules)</strong><br />
+                    Ils désignent les cinq dimensions de la Relativité des Échelles : les quatre dimensions d'espace-temps classiques, plus la dimension d'échelle ε. Lorsqu'on voit un A ou un B, cela signifie que la grandeur considérée existe dans le tissu complet, incluant la profondeur d'échelle. Par exemple, <i>g</i><sub>AB</sub> est la métrique totale 5D.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">∂<sub>μ</sub> (dérivée partielle)</strong><br />
+                    C'est la dérivée ordinaire d'une grandeur par rapport à une coordonnée donnée, ici une dimension d'espace-temps. Elle mesure comment cette grandeur varie lorsqu'on se déplace dans une direction donnée du temps ou de l'espace.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">∂<sub>A</sub> (dérivée 5D)</strong><br />
+                    Version généralisée de la précédente : elle prend aussi en compte la variation selon la dimension d'échelle ε. Ainsi, ∂<sub>A</sub>Σ mesure comment la règle d'échelle Σ change non seulement dans l'espace-temps, mais aussi lorsqu'on "plonge" plus ou moins profondément dans la dimension d'échelle.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">∇<sub>μ</sub> (dérivée covariante 4D)</strong><br />
+                    C'est une dérivée qui tient compte de la courbure de l'espace-temps : elle permet de différencier des champs (vecteurs, tenseurs) dans un espace courbe, sans briser la cohérence géométrique. C'est elle qui permet de définir des lois physiques valides même dans un univers déformé par la gravité.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">∇<sub>A</sub> (dérivée covariante 5D)</strong><br />
+                    Elle fait la même chose, mais dans la géométrie complète d'espace-temps-d'échelle. Elle inclut les connexions dues à la cinquième dimension, donc les variations de la géométrie selon l'échelle.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">D/Dτ (dérivée le long du temps propre)</strong><br />
+                    Elle décrit comment une grandeur évolue pour un observateur ou une particule qui se déplace dans le tissu. τ est son "temps interne", mesuré par sa propre horloge. C'est la dérivée "vécue" par la matière elle-même.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">∝ (proportionnalité)</strong><br />
+                    Indique que deux grandeurs varient ensemble, sans forcément préciser la constante exacte qui les relie. On l'utilise souvent quand l'équation exprime une loi qualitative avant d'être calibrée.
+                  </div>
+                </div>
+              </div>
+
+              {/* 2. Coordonnées et grandeurs de mouvement */}
+              <div className="bg-slate-800/40 p-6 rounded-xl border border-emerald-500/20">
+                <h4 className="text-xl font-semibold text-emerald-300 mb-4">2. Coordonnées et grandeurs de mouvement</h4>
+                <div className="space-y-4 text-gray-200 text-sm leading-relaxed">
+                  <div>
+                    <strong className="text-emerald-200"><i>x</i><sup>μ</sup> = (<i>ct</i>, <i>x</i>, <i>y</i>, <i>z</i>)</strong><br />
+                    Les coordonnées d'un événement dans l'espace-temps. Le terme <i>ct</i> (<i>c</i> multiplié par le temps) met le temps sur la même échelle d'unité que les distances. Ce quadruplet situe tout phénomène dans le "où" et le "quand" de l'univers.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>dx</i><sup>μ</sup></strong><br />
+                    Un très petit déplacement dans une direction donnée de l'espace-temps. Il est utilisé pour calculer les intervalles, les vitesses et les courbures locales du tissu.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">ε (epsilon)</strong><br />
+                    C'est la cinquième coordonnée : la dimension d'échelle. Elle ne décrit ni un lieu ni un instant, mais la "profondeur" à laquelle on observe la réalité. Changer ε revient à "zoomer" dans la structure de l'espace-temps lui-même, comme si la réalité possédait des couches internes, chacune régie par sa propre tension d'échelle.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>dε</i></strong><br />
+                    Petite variation sur cet axe d'échelle. Si on se déplace de <i>dε</i>, on change de niveau d'observation du tissu. Cela représente le passage d'un régime de densité ou de tension d'échelle à un autre.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>r</i></strong><br />
+                    Distance radiale à partir d'un centre, souvent utilisée pour les étoiles ou les structures sphériques. C'est la coordonnée qui permet de décrire la variation d'échelle à l'intérieur d'un corps dense (comme une étoile à neutrons).
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">τ (tau)</strong><br />
+                    Temps propre mesuré par un observateur ou une particule. Contrairement au temps coordonné <i>t</i>, τ est la durée réellement vécue dans le référentiel local.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>u</i><sup>ν</sup> (quadrivitesse)</strong><br />
+                    Vecteur à quatre composantes décrivant la vitesse d'un objet dans l'espace-temps (et non simplement sa vitesse spatiale). Sa norme est constante : <i>u</i><sub>μ</sub><i>u</i><sup>μ</sup> = -<i>c</i><sup>2</sup>. Il relie mouvement et géométrie.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>v</i></strong><br />
+                    La vitesse classique dans l'espace, mesurable dans un référentiel donné. Elle sert à relier le comportement relativiste (via γ) à l'énergie cinétique.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">γ = 1 / √(1−<i>v</i>²/<i>c</i>²)</strong><br />
+                    Facteur relativiste. Il augmente à mesure qu'on se rapproche de la vitesse de la lumière. Il traduit la dilatation du temps et la contraction des distances ressenties à haute vitesse.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>c</i></strong><br />
+                    Constante universelle de la vitesse de la lumière dans le vide (≈ 299 792 458 m/s). Elle relie le temps et l'espace, et fixe la limite supérieure de toute transmission d'information ou d'énergie.
+                  </div>
+                </div>
+              </div>
+
+              {/* 3. Métriques, intervalles et géométries */}
+              <div className="bg-slate-800/40 p-6 rounded-xl border border-emerald-500/20">
+                <h4 className="text-xl font-semibold text-emerald-300 mb-4">3. Métriques, intervalles et géométries</h4>
+                <div className="space-y-4 text-gray-200 text-sm leading-relaxed">
+                  <div>
+                    <strong className="text-emerald-200"><i>ds</i><sup>2</sup></strong><br />
+                    L'intervalle élémentaire, c'est-à-dire la manière dont on mesure la distance ou la durée entre deux événements dans un espace-temps courbe. Si <i>ds</i><sup>2</sup> est positif, on parle d'un intervalle spatial ; s'il est négatif, d'un intervalle temporel. C'est le cœur de la géométrisation de la physique.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>g</i><sub>μν</sub>(<i>x</i>)</strong><br />
+                    La métrique gravitationnelle classique, qui décrit comment la matière courbe l'espace-temps. Elle détermine la manière dont les distances et les temps sont mesurés localement. C'est elle qui fait que la trajectoire "droite" d'une planète devient une orbite autour du Soleil.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>g</i><sub>μν</sub>(<i>x</i>, ε)</strong><br />
+                    Version généralisée de la métrique, qui dépend aussi de la profondeur d'échelle ε. Elle permet de décrire comment la géométrie locale se modifie selon la densité ou le régime d'énergie interne du milieu observé. C'est une métrique "vivante", qui s'adapte à la tension interne du tissu.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>g</i><sub>AB</sub></strong><br />
+                    Métrique complète 5D, incluant la dimension d'échelle. Elle contient à la fois les effets gravitationnels classiques et les effets d'étirement d'échelle.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>g</i><sup>AB</sup></strong><br />
+                    Inverse de la métrique précédente, utilisé pour remonter les indices et exprimer les équations dans leur forme contravariante. C'est grâce à elle qu'on peut calculer des opérateurs comme le d'Alembertien 5D (□₅).
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">√−<i>g</i></strong><br />
+                    Facteur de volume géométrique. Il représente la manière dont le volume d'un petit "cube" change à cause de la courbure. Il garantit que les intégrales (comme celle de l'action) soient valides dans un univers courbe.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">ḡ<sub>μν</sub>(<i>x</i>, ε) = (1/Σ²) <i>g</i><sub>μν</sub>(<i>x</i>, ε)</strong><br />
+                    La métrique mesurée : c'est celle que les instruments physiques (règles, horloges) utilisent réellement. Le facteur 1/Σ² rééchelonne la métrique brute, garantissant que les observables restent finis même dans les régions denses. C'est grâce à cette métrique qu'il n'y a plus de singularité : tout devient mesurable.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>R</i>₅</strong><br />
+                    Courbure scalaire de la métrique 5D. Elle résume l'état global de la géométrie du tissu d'échelle-temps. Plus <i>R</i>₅ est élevé, plus la géométrie est tendue ou courbée, et plus le tissu porte d'énergie géométrique.
+                  </div>
+                </div>
+              </div>
+
+              {/* 4. Facteur et tension d'échelle */}
+              <div className="bg-slate-800/40 p-6 rounded-xl border border-emerald-500/20">
+                <h4 className="text-xl font-semibold text-emerald-300 mb-4">4. Facteur et tension d'échelle</h4>
+                <div className="space-y-4 text-gray-200 text-sm leading-relaxed">
+                  <div>
+                    <strong className="text-emerald-200">Σ(<i>x</i>, ε)</strong><br />
+                    Facteur d'échelle : c'est la "règle interne" du tissu. Il mesure à quel point l'espace-temps est étiré ou comprimé dans la dimension d'échelle. Quand Σ augmente, le tissu est sous tension : il s'étire pour accommoder la densité, la pression ou la vitesse du milieu. C'est le cœur dynamique de la Relativité des Échelles.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">Σ<sub>U</sub>(ε)</strong><br />
+                    Composante universelle de Σ. Elle décrit l'état moyen du tissu à l'échelle cosmique, autrement dit, la "tension de fond" de l'univers tout entier. Elle évolue lentement avec ε et avec le temps cosmique, contrôlant le glissement d'échelle global.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">Σ<sub>L</sub>(<i>x</i>)</strong><br />
+                    Composante locale du facteur d'échelle. Elle varie d'un point à l'autre selon la matière présente, la gravité et les vitesses locales. Là où la densité est forte, Σ<sub>L</sub> est plus grande : la règle est localement plus tendue.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>T</i><sub>ε</sub> = <i>dΣ</i>/<i>dε</i></strong><br />
+                    Tension d'échelle. Elle indique à quelle vitesse la règle s'étire lorsqu'on se déplace le long de la dimension d'échelle. Un <i>T</i><sub>ε</sub> élevé signifie que le tissu réagit fortement aux variations internes — typique des milieux extrêmes comme les cœurs stellaires. Cette tension n'est pas mécanique mais métrique : c'est une élasticité du réel.
+                  </div>
+                </div>
+              </div>
+
+              {/* 5. Densités, pressions et couplages */}
+              <div className="bg-slate-800/40 p-6 rounded-xl border border-emerald-500/20">
+                <h4 className="text-xl font-semibold text-emerald-300 mb-4">5. Densités, pressions et couplages</h4>
+                <div className="space-y-4 text-gray-200 text-sm leading-relaxed">
+                  <div>
+                    <strong className="text-emerald-200">ρ (rho)</strong><br />
+                    Densité d'énergie de la matière. Elle regroupe la masse et l'énergie interne sous la forme <i>E</i> = ρ<i>c</i><sup>2</sup>. Dans ton modèle, c'est la source première qui alimente la déformation du tissu et l'étirement de la règle d'échelle.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>p</i> (pression)</strong><br />
+                    Pression locale exercée par la matière ou le rayonnement. Elle s'ajoute à la densité pour renforcer la tension d'échelle, car dans un fluide très comprimé, la matière agit aussi comme une source géométrique.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">ρ<sub>ε</sub> (rho epsilon)</strong><br />
+                    Densité d'énergie d'échelle. C'est une énergie propre à la cinquième dimension : elle mesure combien le tissu d'échelle lui-même stocke d'énergie lorsqu'il se déforme. Elle apparaît dans les équations de source de la tension d'échelle.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>P</i><sub>ε</sub> (pression d'échelle)</strong><br />
+                    Force interne opposée à la compression de la règle. Elle équilibre la gravité dans les régimes extrêmes (par exemple dans les étoiles quantiques) en empêchant la contraction totale. Elle obéit à une loi d'état spécifique : <i>P</i><sub>ε</sub> = ρ<sub>ε</sub><i>c</i><sup>2</sup> = ℏ<i>c</i>/<i>L</i><sub>ε</sub><sup>4</sup>.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">κ<sub>m</sub>, κ<sub>p</sub>, κ<sub>k</sub></strong><br />
+                    Constantes de couplage d'échelle : elles traduisent la contribution respective de la densité, de la pression et du mouvement relativiste à la croissance de Σ. Ce sont les "coefficients d'élasticité" de la règle universelle.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">α (alpha)</strong><br />
+                    Constante de couplage matière-échelle. Elle relie la trace du tenseur d'énergie (<i>T</i>) à la dynamique du facteur d'échelle Σ dans l'équation d'onde 5D. En résumé : plus la matière exerce d'énergie-impulsion, plus elle excite le champ Σ.
+                  </div>
+                </div>
+              </div>
+
+              {/* 6. Tenseurs et opérateurs géométriques */}
+              <div className="bg-slate-800/40 p-6 rounded-xl border border-emerald-500/20">
+                <h4 className="text-xl font-semibold text-emerald-300 mb-4">6. Tenseurs et opérateurs géométriques</h4>
+                <div className="space-y-4 text-gray-200 text-sm leading-relaxed">
+                  <div>
+                    <strong className="text-emerald-200"><i>R</i><sub>μν</sub>(<i>x</i>, ε)</strong><br />
+                    Tenseur de Ricci : il mesure comment l'espace-temps se courbe localement à cause de la matière. Ici, il dépend aussi de ε, car la courbure peut varier selon la tension d'échelle du milieu.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>G</i><sub>μν</sub>(<i>x</i>, ε)</strong><br />
+                    Tenseur d'Einstein, combinaison de courbures (<i>G</i><sub>μν</sub> = <i>R</i><sub>μν</sub> − ½<i>R</i><i>g</i><sub>μν</sub>). C'est le lien direct entre la géométrie et l'énergie-impulsion dans la version 5D. Il conserve la même structure que dans la Relativité Générale, mais enrichie par l'effet d'échelle.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>T</i><sub>μν</sub>(<i>x</i>, ε)</strong><br />
+                    Tenseur énergie-impulsion : il regroupe toutes les formes d'énergie, de pression et de flux dans l'espace-temps-d'échelle. C'est la "matière" au sens le plus large, incluant les champs, les rayonnements et les tensions internes.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>T</i>(<i>x</i>, ε)</strong><br />
+                    Trace du tenseur précédent : <i>T</i> = <i>T</i><sub>A</sub><sup>A</sup>. Elle joue le rôle de source simplifiée pour le champ d'échelle Σ dans l'équation □₅Σ − ∂<i>V</i>/∂Σ = α<i>T</i>.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">Λ<sub>ε</sub> (lambda epsilon)</strong><br />
+                    Constante cosmologique d'échelle : Λ<sub>ε</sub> = (1/Σ²)<i>d</i>²Σ/<i>dε</i>². C'est la forme dynamique de la constante cosmologique d'Einstein. Au lieu d'être fixée, elle dépend ici de la manière dont la règle Σ se courbe dans la cinquième dimension. Quand Σ cesse d'évoluer, Λ<sub>ε</sub> redevient constante et la Relativité Générale classique est retrouvée.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">∇<sub>μ</sub>(∂<sub>μ</sub>Σ) = 8π<i>G</i>ρ<sub>ε</sub></strong><br />
+                    Équation source de l'échelle. Elle indique que la divergence du gradient de Σ est produite par la densité d'énergie d'échelle ρ<sub>ε</sub>, exactement comme la gravité classique répond à la densité de matière.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">□₅ (box operator)</strong><br />
+                    C'est l'opérateur d'onde 5D : □₅ = <i>g</i><sup>AB</sup>∇<sub>A</sub>∇<sub>B</sub>. Il généralise le Laplacien aux géométries courbes et permet de décrire comment la déformation d'échelle se propage à travers tout le tissu d'espace-temps-d'échelle.
+                  </div>
+                </div>
+              </div>
+
+              {/* 7. Énergie, action et potentiels */}
+              <div className="bg-slate-800/40 p-6 rounded-xl border border-emerald-500/20">
+                <h4 className="text-xl font-semibold text-emerald-300 mb-4">7. Énergie, action et potentiels</h4>
+                <div className="space-y-4 text-gray-200 text-sm leading-relaxed">
+                  <div>
+                    <strong className="text-emerald-200"><i>S</i></strong><br />
+                    Action totale du tissu. C'est le principe fondamental de la théorie : toutes les équations en découlent en cherchant la configuration qui minimise <i>S</i>. En d'autres termes, le tissu "choisit" sa géométrie pour rendre cette action la plus stable possible.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>V</i>(Σ)</strong><br />
+                    Potentiel d'échelle. Il décrit l'énergie interne stockée dans la règle Σ lorsqu'elle s'écarte de sa valeur d'équilibre. Ce terme empêche le tissu de se détendre ou de s'étirer à l'infini : il le stabilise.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>L</i><sub>matière</sub> (ou ℒ<sub>matière</sub>)</strong><br />
+                    Lagrangien de la matière et des champs. Il contient la physique connue : particules, rayonnement, interactions, etc. C'est grâce à ce terme que la matière "parle" à la géométrie.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">∫<i>d</i>⁴<i>x</i> <i>dε</i></strong><br />
+                    Intégration sur les quatre dimensions d'espace-temps et sur la dimension d'échelle. Cela revient à sommer toutes les contributions du tissu entier, sur toutes ses profondeurs d'échelle.
+                  </div>
+                </div>
+              </div>
+
+              {/* 8. Grandeurs thermiques et transport d'énergie */}
+              <div className="bg-slate-800/40 p-6 rounded-xl border border-emerald-500/20">
+                <h4 className="text-xl font-semibold text-emerald-300 mb-4">8. Grandeurs thermiques et transport d'énergie</h4>
+                <div className="space-y-4 text-gray-200 text-sm leading-relaxed">
+                  <div>
+                    <strong className="text-emerald-200">Φ<sub>T</sub>(<i>r</i>)</strong><br />
+                    Flux de chaleur radial. Il mesure combien d'énergie thermique s'échappe d'une couche de matière par unité de surface et de temps. Dans ton modèle, il est freiné par l'étirement d'échelle : plus Σ est grande, plus Φ<sub>T</sub> est ralenti.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>T</i> (température)</strong><br />
+                    Énergie thermique moyenne d'un milieu. Elle sert à relier la dynamique d'échelle au comportement observable des étoiles, notamment leur refroidissement apparent.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>k</i> (conductivité)</strong><br />
+                    Coefficient qui quantifie la facilité avec laquelle la chaleur se déplace dans le milieu. Dans les régions où Σ est forte, la conductivité effective diminue : le flux thermique ralentit.
+                  </div>
+                </div>
+              </div>
+
+              {/* 9. Cosmologie et glissement d'échelle */}
+              <div className="bg-slate-800/40 p-6 rounded-xl border border-emerald-500/20">
+                <h4 className="text-xl font-semibold text-emerald-300 mb-4">9. Cosmologie et glissement d'échelle</h4>
+                <div className="space-y-4 text-gray-200 text-sm leading-relaxed">
+                  <div>
+                    <strong className="text-emerald-200">Σ<sub>U</sub>(<i>t</i>)</strong><br />
+                    Valeur de la règle universelle à un instant donné du temps cosmique. Elle décrit comment le tissu global de l'univers s'étire au fil du temps.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>H</i><sub>ε</sub></strong><br />
+                    Taux de glissement d'échelle, analogue au paramètre de Hubble mais appliqué à la dynamique interne de la règle d'échelle. Il mesure la vitesse à laquelle la règle universelle Σ<sub>U</sub> change dans le temps.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>z</i> (redshift)</strong><br />
+                    Décalage spectral des photons. Ici, il ne vient pas d'un espace qui "s'étire" vers l'extérieur, mais du fait que la règle universelle Σ<sub>U</sub> a changé entre l'émission et l'observation. Les longueurs d'onde nous paraissent plus grandes simplement parce que la règle avec laquelle on mesure a grandi.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>t</i><sub>ém</sub>, <i>t</i><sub>obs</sub></strong><br />
+                    Instants d'émission et d\'observation d'un photon. Le rapport entre Σ<sub>U</sub> à ces deux moments donne directement le redshift observé : 1 + <i>z</i> = Σ<sub>U</sub>(<i>t</i><sub>obs</sub>)/Σ<sub>U</sub>(<i>t</i><sub>ém</sub>).
+                  </div>
+                </div>
+              </div>
+
+              {/* 10. Régimes d'échelle extrêmes et quantiques */}
+              <div className="bg-slate-800/40 p-6 rounded-xl border border-emerald-500/20">
+                <h4 className="text-xl font-semibold text-emerald-300 mb-4">10. Régimes d'échelle extrêmes et quantiques</h4>
+                <div className="space-y-4 text-gray-200 text-sm leading-relaxed">
+                  <div>
+                    <strong className="text-emerald-200"><i>L</i><sub>ε</sub></strong><br />
+                    Longueur d'échelle caractéristique interne. C'est la taille intrinsèque des structures les plus fines du tissu. Plus <i>L</i><sub>ε</sub> est petite, plus le tissu est dense en énergie et plus la pression d'échelle est forte.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200">ℏ (h-bar)</strong><br />
+                    Constante de Planck réduite. Elle introduit la dimension quantique de l'action. Elle montre que la Relativité des Échelles rejoint naturellement la mécanique quantique lorsque la structure du tissu atteint ses profondeurs minimales.
+                  </div>
+                </div>
+              </div>
+
+              {/* 11. Constantes fondamentales */}
+              <div className="bg-slate-800/40 p-6 rounded-xl border border-emerald-500/20">
+                <h4 className="text-xl font-semibold text-emerald-300 mb-4">11. Constantes fondamentales</h4>
+                <div className="space-y-4 text-gray-200 text-sm leading-relaxed">
+                  <div>
+                    <strong className="text-emerald-200"><i>G</i></strong><br />
+                    Constante de gravitation universelle. Elle relie la quantité de matière-énergie à la courbure géométrique de l'espace-temps. C'est le pont entre la masse et la géométrie.
+                  </div>
+                  <div>
+                    <strong className="text-emerald-200"><i>c</i></strong><br />
+                    Vitesse de la lumière, déjà citée, mais ici elle a un rôle plus profond : elle relie non seulement le temps et l'espace, mais aussi la tension du tissu (car toute variation d'échelle ou d'énergie s'y réfère).
+                  </div>
+                </div>
+              </div>
+
+              {/* 12. Récapitulatif conceptuel */}
+              <div className="bg-slate-800/40 p-6 rounded-xl border border-emerald-500/20">
+                <h4 className="text-xl font-semibold text-emerald-300 mb-4">12. Récapitulatif conceptuel</h4>
+                <div className="space-y-4 text-gray-200 text-sm leading-relaxed">
+                  <p>Chaque symbole de la Relativité des Échelles ne désigne pas seulement une quantité, mais une facette du tissu universel :</p>
+                  <ul className="list-disc list-inside space-y-2 ml-4">
+                    <li>les <i>x</i><sup>μ</sup> et <i>g</i><sub>μν</sub> définissent l'espace-temps visible ;</li>
+                    <li>la coordonnée ε et le facteur Σ définissent la profondeur d'échelle invisible ;</li>
+                    <li>les tenseurs <i>G</i><sub>μν</sub> et <i>T</i><sub>μν</sub> assurent le dialogue entre matière et géométrie ;</li>
+                    <li>et la tension <i>T</i><sub>ε</sub>, le potentiel <i>V</i>(Σ) et le terme Λ<sub>ε</sub> maintiennent la cohésion interne du réel.</li>
+                  </ul>
+                  <p className="mt-4">
+                    Ensemble, ces symboles forment le langage complet de la Relativité des Échelles, où chaque élément du cosmos — du cœur des étoiles à l'expansion cosmique — se lit comme une variation d'une seule et même règle universelle : Σ(<i>x</i>, ε).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
